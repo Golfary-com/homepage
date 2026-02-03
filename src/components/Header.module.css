@@ -6,20 +6,23 @@
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
 }
 
 .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  width: 100%;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--primary-green);
   letter-spacing: -0.5px;
+  z-index: 102;
 }
 
 .nav {
@@ -36,9 +39,10 @@
 }
 
 .navList a {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-primary);
   transition: color 0.2s;
+  font-size: 15px;
 }
 
 .navList a:hover {
@@ -49,7 +53,7 @@
   display: flex;
   gap: 8px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .langSwitch a {
@@ -62,4 +66,98 @@
 
 .divider {
   color: #ddd;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 102;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobileLangSwitch {
+  display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 101;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+  }
+
+  .nav.menuOpen {
+    right: 0;
+  }
+
+  .navList {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .navList a {
+    font-size: 20px;
+  }
+
+  .langSwitch {
+    display: none;
+  }
+
+  .mobileLangSwitch {
+    display: flex;
+    margin-top: 50px;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .mobileLangSwitch a {
+    color: #888;
+  }
+
+  .mobileLangSwitch .active {
+    color: var(--primary-green);
+  }
 }
