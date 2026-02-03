@@ -7,7 +7,8 @@
     "home": "홈",
     "services": "서비스",
     "company": "회사소개",
-    "contact": "문의하기"
+    "contact": "문의하기",
+    "news": "소식"
   },
   "hero": {
     "slogan": "일본 골프여행의 새로운 기준",
@@ -27,6 +28,26 @@
       "title": "맞춤형 일정 생성",
       "desc": "식사, 숙박, 라운딩을 포함한 완벽한 골프 여행 일정을 자동으로 생성합니다."
     }
+  },
+  "news": {
+    "title": "최신 소식",
+    "items": [
+      {
+        "date": "2026.02.03",
+        "title": "Golfary 공식 홈페이지 리뉴얼 오픈",
+        "category": "Notice"
+      },
+      {
+        "date": "2026.01.15",
+        "title": "일본 골프장 데이터 파트너십 확대 체결",
+        "category": "Press"
+      },
+      {
+        "date": "2026.01.05",
+        "title": "AI 일정 모델 2.0 버전 배포 완료",
+        "category": "Tech"
+      }
+    ]
   },
   "company": {
     "mission": "미션",

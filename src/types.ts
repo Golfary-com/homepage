@@ -8,6 +8,7 @@ export interface Dictionary {
     services: string;
     company: string;
     contact: string;
+    news: string;
   };
   hero: {
     slogan: string;
@@ -18,6 +19,14 @@ export interface Dictionary {
     course: { title: string; desc: string };
     travel: { title: string; desc: string };
     schedule: { title: string; desc: string };
+  };
+  news: {
+    title: string;
+    items: {
+      date: string;
+      title: string;
+      category: string;
+    }[];
   };
   company: {
     mission: string;

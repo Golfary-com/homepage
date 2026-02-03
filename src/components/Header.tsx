@@ -31,6 +31,9 @@ export default function Header({ dict, lang }: { dict: Dictionary; lang: string 
               <Link href={`/${lang}/services`}>{dict.nav.services}</Link>
             </li>
             <li>
+              <Link href={`/${lang}#news`}>{dict.nav.news}</Link>
+            </li>
+            <li>
               <Link href={`/${lang}/company`}>{dict.nav.company}</Link>
             </li>
             <li>
