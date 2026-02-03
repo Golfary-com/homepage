@@ -1,0 +1,50 @@
+{
+  "common": {
+    "title": "Golfary",
+    "description": "일본 골프여행의 새로운 기준"
+  },
+  "nav": {
+    "home": "홈",
+    "services": "서비스",
+    "company": "회사소개",
+    "contact": "문의하기"
+  },
+  "hero": {
+    "slogan": "일본 골프여행의 새로운 기준",
+    "subSlogan": "AI가 설계하는 당신만의 골프 일정"
+  },
+  "services": {
+    "title": "주요 서비스",
+    "course": {
+      "title": "AI 골프 코스 추천",
+      "desc": "사용자의 실력과 취향을 분석하여 최적의 골프장을 제안합니다."
+    },
+    "travel": {
+      "title": "스마트 이동 경로 최적화",
+      "desc": "골프장과 호텔 간의 이동 시간을 최소화하는 효율적인 경로를 설계합니다."
+    },
+    "schedule": {
+      "title": "맞춤형 일정 생성",
+      "desc": "식사, 숙박, 라운딩을 포함한 완벽한 골프 여행 일정을 자동으로 생성합니다."
+    }
+  },
+  "company": {
+    "mission": "미션",
+    "missionDesc": "기술을 통해 골프 여행의 장벽을 낮추고 모두에게 즐거운 경험을 선사합니다.",
+    "vision": "비전",
+    "visionDesc": "아시아 No.1 골프 여행 & 로컬 관광 플랫폼",
+    "info": {
+      "title": "기업 정보",
+      "address": "주소: 서울특별시 강남구 ...",
+      "capital": "자본금: 1억원",
+      "team": "팀 소개"
+    }
+  },
+  "contact": {
+    "title": "제휴 문의",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "submit": "보내기"
+  }
+}

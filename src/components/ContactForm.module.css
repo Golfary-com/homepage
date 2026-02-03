@@ -1,0 +1,62 @@
+.contact {
+  padding: 100px 0;
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  color: var(--text-primary);
+}
+
+.group {
+  margin-bottom: 24px;
+}
+
+.group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.group input, .group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.group input:focus, .group textarea:focus {
+  border-color: var(--primary-green);
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit:hover {
+  background-color: var(--primary-dark);
+}

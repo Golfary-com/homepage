@@ -1,0 +1,65 @@
+.company {
+  padding: 100px 0;
+  background-color: var(--bg-secondary);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 48px;
+  color: var(--primary-dark);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.infoBlock, .teamBlock {
+  flex: 1;
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.infoBlock h3, .teamBlock h3 {
+  margin-bottom: 16px;
+  color: var(--primary-green);
+}
+
+.infoBlock ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoBlock li {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.members {
+  display: flex;
+  gap: 16px;
+}
+
+.member {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
