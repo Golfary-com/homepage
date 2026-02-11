@@ -6,6 +6,7 @@ export interface Dictionary {
   nav: {
     home: string;
     services: string;
+    team: string;
     company: string;
     contact: string;
     news: string;
@@ -79,6 +80,7 @@ export interface Dictionary {
   };
   contact: {
     title: string;
+    subtitle: string;
     name: string;
     email: string;
     message: string;

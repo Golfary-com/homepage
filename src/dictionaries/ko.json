@@ -6,9 +6,10 @@
   "nav": {
     "home": "홈",
     "services": "서비스",
-    "company": "회사소개",
-    "contact": "문의하기",
-    "news": "소식"
+    "team": "팀 소개",
+    "company": "회사 소개",
+    "contact": "제휴 문의",
+    "news": "뉴스"
   },
   "hero": {
     "slogan": "일본 골프여행의 새로운 기준",
@@ -99,27 +100,31 @@
   },
   "team": {
     "title": "우리 팀",
-    "subtitle": "열정과 전문성으로 골프 여행의 미래를 만드는 프로페셔널",
+    "subtitle": "최첨단 AI 기술과 글로벌 시각으로 개인화된 골프 여행 경험을 제공하는",
     "members": [
       {
-        "name": "김정훈",
-        "role": "CEO / 대표이사",
-        "expertise": "관광 산업・AI 프로덕트 개발"
+        "name": "Jichul Kim",
+        "role": "Founder",
+        "expertise": "관광 산업・AI 프로덕트 개발",
+        "bio": "10년 이상의 관광 산업 경험을 바탕으로 AI 기술과 관광을 접목시킨 혁신적인 서비스를 개발하고 있습니다. 일본 시장에 대한 깊은 이해를 통해 Golfary를 글로벌 플랫폼으로 성장시키고 있습니다.",
+        "education": "도쿄대학교 경영학 석사",
+        "experience": "전 JTB 관광 디지털 전략팀장 (5년)\n일본 골프 투어 기획 및 운영 (7년)"
       },
       {
-        "name": "박지혜",
-        "role": "CTO / 기술 책임자",
-        "expertise": "머신러닝・시스템 아키텍처"
+        "name": "Hanu Nam",
+        "role": "UX Researcher",
+        "expertise": "UX 리서치・UI 디자인",
+        "bio": "사용자 중심의 디자인 철학으로 Golfary의 사용성과 아름다움을 추구합니다. 데이터 기반 인사이트로 최고의 사용자 경험을 만들어갑니다.",
+        "education": "서울대학교 디자인학 석사",
+        "experience": "UX 리서치 및 UI 디자인 전문 (5년)\n모바일 앱 디자인 다수"
       },
       {
-        "name": "이현우",
-        "role": "COO / 운영 책임자",
-        "expertise": "골프장 파트너십・운영"
-      },
-      {
-        "name": "사토 미사키",
-        "role": "Japan Market Lead",
-        "expertise": "일본 시장 전략・고객 대응"
+        "name": "Sunghwa Cho",
+        "role": "Tech Lead",
+        "expertise": "머신러닝・시스템 아키텍처",
+        "bio": "AI 및 머신러닝 전문가로서 대규모 데이터 처리와 개인화 추천 시스템을 설계합니다. 최첨단 기술로 사용자에게 최적의 골프 여행 경험을 제공합니다.",
+        "education": "KAIST 전산학 박사",
+        "experience": "전 네이버 AI 연구소 선임연구원 (4년)\n추천 시스템 및 자연어처리 전문"
       }
     ],
     "strengthsTitle": "팀의 강점",
@@ -145,6 +150,7 @@
   },
   "contact": {
     "title": "제휴 문의",
+    "subtitle": "궁금하신 점이 있으시면 언제든 문의해주세요",
     "name": "이름",
     "email": "이메일",
     "message": "메시지",

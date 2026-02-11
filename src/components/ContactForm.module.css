@@ -1,62 +1,79 @@
 .contact {
   padding: 100px 0;
-  background-color: var(--primary-dark);
+  background: linear-gradient(135deg, #1e3a2c 0%, #2d5f47 100%);
   color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 48px;
-}
-
-.form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  color: var(--text-primary);
-}
-
-.group {
-  margin-bottom: 24px;
-}
-
-.group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.group input, .group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 0.2s;
-}
-
-.group input:focus, .group textarea:focus {
-  border-color: var(--primary-green);
-  outline: none;
-}
-
-.submit {
-  width: 100%;
-  padding: 16px;
-  background-color: var(--primary-green);
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-m);
   color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.2s;
 }
 
-.submit:hover {
-  background-color: var(--primary-dark);
+.subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 20px 60px;
+  background: white;
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 3px solid transparent;
+}
+
+.contactButton:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 var(--spacing-l);
+  }
+
+  .contactButton {
+    padding: 16px 40px;
+    font-size: 1rem;
+  }
 }

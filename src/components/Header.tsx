@@ -50,7 +50,10 @@ export default function Header({ dict, lang }: { dict: Dictionary; lang: string 
               <Link href={`/${lang}/#news`} onClick={closeMenu}>{dict.nav.news}</Link>
             </li>
             <li>
-              <Link href={`/${lang}/#company`} onClick={closeMenu}>{dict.nav.company}</Link>
+              <Link href={`/${lang}/#team`} onClick={closeMenu}>{dict.nav.team}</Link>
+            </li>
+            <li>
+              <Link href={`/${lang}/company/nihon-kiko`} onClick={closeMenu}>{dict.nav.company}</Link>
             </li>
             <li>
               <Link href={`/${lang}/#contact`} onClick={closeMenu}>{dict.nav.contact}</Link>
