@@ -1,7 +1,8 @@
+import Link from "next/link";
 import styles from "./VideoSection.module.css";
 import { Dictionary } from "../types";
 
-export default function VideoSection({ dict }: { dict: Dictionary }) {
+export default function VideoSection({ dict, lang }: { dict: Dictionary; lang: string }) {
   return (
     <section className={styles.videoSection}>
       <div className="container">
@@ -9,6 +10,13 @@ export default function VideoSection({ dict }: { dict: Dictionary }) {
           <h2 className={styles.title}>{dict.video.title}</h2>
           <p className={styles.subtitle}>{dict.video.subtitle}</p>
         </div>
+        
+        <div className={styles.ctaWrapper}>
+          <Link href={`/${lang}/services`} className={styles.ctaServices}>
+            {dict.nav.services}
+          </Link>
+        </div>
+
         <div className={styles.videoWrapper}>
           <iframe
             width="100%"

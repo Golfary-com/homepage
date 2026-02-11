@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Mission from "@/components/Mission";
 import VideoSection from "@/components/VideoSection";
 import Services from "@/components/Services";
 import News from "@/components/News";
@@ -14,8 +13,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   return (
     <main>
       <Hero dict={dict} lang={lang} />
-      <Mission dict={dict} />
-      <VideoSection dict={dict} />
+      <VideoSection dict={dict} lang={lang} />
       <Services dict={dict} />
       <News dict={dict} />
       <Team dict={dict} />

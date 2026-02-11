@@ -12,7 +12,7 @@
   },
   "hero": {
     "slogan": "観光業の再構築で地方創生を行う",
-    "subSlogan": "テクノロジーで繋ぐ新しいゴルフツーリズム"
+    "subSlogan": "AIで繋ぐ新しいゴルフツーリズム"
   },
   "video": {
     "title": "Golfaryについて",
@@ -102,24 +102,19 @@
     "subtitle": "情熱と専門性を持ってゴルフ旅行の未来を創造するプロフェッショナル",
     "members": [
       {
-        "name": "金 正勲",
-        "role": "CEO / 代表取締役",
+        "name": "Jichul Kim",
+        "role": "Founder",
         "expertise": "観光産業・AIプロダクト開発"
       },
       {
-        "name": "朴 智恵",
-        "role": "CTO / 技術責任者",
+        "name": "Hanu Nam",
+        "role": "UX Researcher",
+        "expertise": "UXリサーチ・UIデザイン"
+      },
+      {
+        "name": "Sunghwa Cho",
+        "role": "Tech Lead",
         "expertise": "機械学習・システムアーキテクチャ"
-      },
-      {
-        "name": "李 賢宇",
-        "role": "COO / 運営責任者",
-        "expertise": "ゴルフ場パートナーシップ・運営"
-      },
-      {
-        "name": "佐藤 美咲",
-        "role": "Japan Market Lead",
-        "expertise": "日本市場戦略・顧客対応"
       }
     ],
     "strengthsTitle": "チームの強み",
