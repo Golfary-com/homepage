@@ -1,50 +1,78 @@
 .mission {
-  padding: 100px 0;
-  background-color: var(--bg-secondary);
+  padding: var(--spacing-3xl) 0;
+  background: var(--bg-secondary);
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--spacing-2xl);
   align-items: center;
-  gap: 60px;
   text-align: center;
 }
 
 .block {
-  flex: 1;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.block:first-child {
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.block:last-child {
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
 }
 
 .label {
-  font-size: 1.2rem;
+  font-size: var(--font-size-sm);
   color: var(--primary-green);
   text-transform: uppercase;
-  margin-bottom: 16px;
-  letter-spacing: 2px;
+  margin-bottom: var(--spacing-m);
+  letter-spacing: 3px;
+  font-weight: var(--font-weight-semibold);
 }
 
 .desc {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 1.4;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-primary);
+  margin: 0;
 }
 
 .divider {
-  width: 1px;
-  height: 80px;
-  background-color: #ddd;
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--primary-green),
+    transparent
+  );
+  opacity: 0.3;
 }
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
   }
+  
   .divider {
-    width: 80px;
-    height: 1px;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--primary-green),
+      transparent
+    );
+    justify-self: center;
   }
+  
   .desc {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
   }
 }

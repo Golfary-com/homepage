@@ -1,7 +1,9 @@
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
+import VideoSection from "@/components/VideoSection";
 import Services from "@/components/Services";
 import News from "@/components/News";
+import Team from "@/components/Team";
 import CompanyInfo from "@/components/CompanyInfo";
 import ContactForm from "@/components/ContactForm";
 import { getDictionary } from "./dictionaries";
@@ -13,9 +15,11 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
     <main>
       <Hero dict={dict} lang={lang} />
       <Mission dict={dict} />
+      <VideoSection dict={dict} />
       <Services dict={dict} />
       <News dict={dict} />
-      <CompanyInfo dict={dict} />
+      <Team dict={dict} />
+      <CompanyInfo dict={dict} lang={lang} />
       <ContactForm dict={dict} />
     </main>
   );

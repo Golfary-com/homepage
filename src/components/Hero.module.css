@@ -1,13 +1,28 @@
 .hero {
   position: relative;
-  height: 80vh;
-  min-height: 600px;
-  background-image: url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=2070&auto=format&fit=crop'); /* Placeholder golf image */
-  background-size: cover;
-  background-position: center;
+  min-height: 85vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: var(--gradient-hero);
   color: var(--text-inverted);
+  overflow: hidden;
+}
+
+/* Golf Course Pattern Background */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(30deg, transparent 48%, rgba(255, 255, 255, 0.05) 49%, rgba(255, 255, 255, 0.05) 51%, transparent 52%),
+    linear-gradient(150deg, transparent 48%, rgba(255, 255, 255, 0.05) 49%, rgba(255, 255, 255, 0.05) 51%, transparent 52%);
+  background-size: 80px 80px;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .overlay {
@@ -16,72 +31,103 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  z-index: 2;
 }
 
 .content {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   text-align: center;
-  max-width: 800px;
+  padding: var(--spacing-2xl) var(--spacing-m);
+  animation: fadeInUp 1s ease-out;
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-l);
+  line-height: var(--line-height-tight);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out 0.2s backwards;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
-  font-weight: 500;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.4s backwards;
 }
 
 .actions {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-m);
   justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
 }
 
 .ctaPrimary {
-  padding: 16px 32px;
-  background-color: var(--primary-green);
-  color: white;
-  border-radius: 50px;
-  font-weight: 700;
-  transition: transform 0.2s, background-color 0.2s;
+  padding: var(--spacing-m) var(--spacing-xl);
+  background: var(--text-inverted);
+  color: var(--primary-green);
+  border-radius: var(--border-radius-sm);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
 }
 
 .ctaPrimary:hover {
-  transform: translateY(-2px);
-  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  background: var(--accent-lime);
+  color: var(--text-primary);
 }
 
 .ctaSecondary {
-  padding: 16px 32px;
-  background-color: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.3);
-  color: white;
-  border-radius: 50px;
-  font-weight: 700;
-  transition: transform 0.2s, background-color 0.2s;
+  padding: var(--spacing-m) var(--spacing-xl);
+  background: transparent;
+  color: var(--text-inverted);
+  border: 2px solid var(--text-inverted);
+  border-radius: var(--border-radius-sm);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  transition: all var(--transition-base);
 }
 
 .ctaSecondary:hover {
-  transform: translateY(-2px);
-  background-color: rgba(255,255,255,0.2);
+  background: var(--text-inverted);
+  color: var(--primary-green);
+  transform: translateY(-3px);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
+  .hero {
+    min-height: 70vh;
   }
+  
+  .title {
+    font-size: var(--font-size-4xl);
+  }
+  
   .subtitle {
-    font-size: 1.2rem;
+    font-size: var(--font-size-base);
+  }
+  
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    max-width: 300px;
   }
 }

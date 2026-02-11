@@ -44,16 +44,16 @@ export default function Header({ dict, lang }: { dict: Dictionary; lang: string 
               <Link href={`/${lang}`} onClick={closeMenu}>{dict.nav.home}</Link>
             </li>
             <li>
-              <Link href={`/${lang}/services`} onClick={closeMenu}>{dict.nav.services}</Link>
+              <Link href={`/${lang}/#services`} onClick={closeMenu}>{dict.nav.services}</Link>
             </li>
             <li>
-              <Link href={`/${lang}#news`} onClick={closeMenu}>{dict.nav.news}</Link>
+              <Link href={`/${lang}/#news`} onClick={closeMenu}>{dict.nav.news}</Link>
             </li>
             <li>
-              <Link href={`/${lang}/company`} onClick={closeMenu}>{dict.nav.company}</Link>
+              <Link href={`/${lang}/#company`} onClick={closeMenu}>{dict.nav.company}</Link>
             </li>
             <li>
-              <Link href={`/${lang}/contact`} onClick={closeMenu}>{dict.nav.contact}</Link>
+              <Link href={`/${lang}/#contact`} onClick={closeMenu}>{dict.nav.contact}</Link>
             </li>
           </ul>
           

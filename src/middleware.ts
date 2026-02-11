@@ -2,10 +2,10 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 const locales = ["ko", "ja"];
-const defaultLocale = "ko";
+const defaultLocale = "ja";
 
 function getLocale(request: NextRequest) {
-  // Check cookie or headers if needed, for now default to ko
+  // Check cookie or headers if needed, for now default to ja
   // Simple logic: check accept-language header
   const acceptLanguage = request.headers.get("accept-language");
   if (acceptLanguage) {
@@ -36,6 +36,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    "/((?!_next|api|favicon.ico).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|images|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };
