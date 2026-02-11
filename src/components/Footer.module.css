@@ -9,16 +9,81 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info {
+  flex-shrink: 0;
 }
 
 .brand {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 8px;
   color: var(--primary-green);
+  letter-spacing: -0.02em;
 }
 
 .copyright {
   font-size: 14px;
-  color: #888;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navList a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navList a:hover {
+  color: var(--primary-green);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navList li {
+    width: 100%;
+  }
+
+  .navList a {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }

@@ -22,7 +22,7 @@ export default function Header({ dict, lang }: { dict: Dictionary; lang: string 
 
   return (
     <header className={styles.header}>
-      <div className={`container ${styles.inner}`}>
+      <div className={styles.inner}>
         <Link href={`/${lang}`} className={styles.logo} onClick={closeMenu}>
           {dict.common.title}
         </Link>

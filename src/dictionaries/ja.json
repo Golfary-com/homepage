@@ -17,7 +17,8 @@
   },
   "video": {
     "title": "Golfaryについて",
-    "subtitle": "テクノロジーでゴルフ旅行を変革する"
+    "subtitle": "テクノロジーでゴルフ旅行を変革する",
+    "cta": "サービス体験"
   },
   "services": {
     "title": "サービス紹介",
@@ -36,6 +37,8 @@
   },
   "news": {
     "title": "最新ニュース",
+    "showMore": "もっと見る",
+    "showLess": "閉じる",
     "items": [
       {
         "date": "2026.02.09",
@@ -101,11 +104,16 @@
   "team": {
     "title": "私たちのチーム",
     "subtitle": "最先端AI技術とグローバルな視点で、パーソナライズされたゴルフ旅行体験を提供する",
+    "viewDetails": "詳しく見る",
+    "bioTitle": "紹介",
+    "educationTitle": "学歴",
+    "experienceTitle": "経歴",
     "members": [
       {
         "name": "Jichul Kim",
         "role": "Founder",
         "expertise": "観光産業・AIプロダクト開発",
+        "image": "/images/Jichul_Kim.png",
         "bio": "10年以上の観光産業経験を基に、AI技術と観光を融合させた革新的なサービスを開発しています。日本市場への深い理解を通じて、Golfaryをグローバルプラットフォームへと成長させています。",
         "education": "東京大学 経営学修士",
         "experience": "元JTB観光デジタル戦略チーム長 (5年)\n日本ゴルフツアー企画・運営 (7年)"
@@ -114,6 +122,7 @@
         "name": "Hanu Nam",
         "role": "UX Researcher",
         "expertise": "UXリサーチ・UIデザイン",
+        "image": "/images/Hanu_Nam.png",
         "bio": "ユーザー中心のデザイン哲学でGolfaryの使いやすさと美しさを追求しています。データに基づいた洞察で最高のユーザー体験を創造します。",
         "education": "ソウル大学校 デザイン学修士",
         "experience": "UXリサーチ及びUIデザイン専門 (5年)\nモバイルアプリデザイン多数"
@@ -122,6 +131,7 @@
         "name": "Sunghwa Cho",
         "role": "Tech Lead",
         "expertise": "機械学習・システムアーキテクチャ",
+        "image": "/images/Sungwha_Cho.png",
         "bio": "AI及び機械学習の専門家として、大規模データ処理とパーソナライズ推薦システムを設計します。最先端技術でユーザーに最適なゴルフ旅行体験を提供します。",
         "education": "KAIST 計算機科学博士",
         "experience": "元Naver AI研究所 シニアリサーチャー (4年)\n推薦システム及び自然言語処理専門"

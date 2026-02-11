@@ -12,7 +12,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   return (
     <main>
       <Hero dict={dict} />
-      <VideoSection dict={dict} lang={lang} />
+      <VideoSection dict={dict} />
       <Services dict={dict} />
       <News dict={dict} />
       <Team dict={dict} />

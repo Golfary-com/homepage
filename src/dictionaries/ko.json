@@ -17,7 +17,8 @@
   },
   "video": {
     "title": "Golfary 소개",
-    "subtitle": "기술로 골프 여행을 혁신하다"
+    "subtitle": "기술로 골프 여행을 혁신하다",
+    "cta": "서비스 체험하기"
   },
   "services": {
     "title": "주요 서비스",
@@ -36,6 +37,8 @@
   },
   "news": {
     "title": "최신 소식",
+    "showMore": "더보기",
+    "showLess": "접기",
     "items": [
       {
         "date": "2026.02.09",
@@ -101,11 +104,16 @@
   "team": {
     "title": "우리 팀",
     "subtitle": "최첨단 AI 기술과 글로벌 시각으로 개인화된 골프 여행 경험을 제공하는",
+    "viewDetails": "자세히 보기",
+    "bioTitle": "소개",
+    "educationTitle": "학력",
+    "experienceTitle": "경력",
     "members": [
       {
         "name": "Jichul Kim",
         "role": "Founder",
         "expertise": "관광 산업・AI 프로덕트 개발",
+        "image": "/images/Jichul_Kim.png",
         "bio": "10년 이상의 관광 산업 경험을 바탕으로 AI 기술과 관광을 접목시킨 혁신적인 서비스를 개발하고 있습니다. 일본 시장에 대한 깊은 이해를 통해 Golfary를 글로벌 플랫폼으로 성장시키고 있습니다.",
         "education": "도쿄대학교 경영학 석사",
         "experience": "전 JTB 관광 디지털 전략팀장 (5년)\n일본 골프 투어 기획 및 운영 (7년)"
@@ -114,6 +122,7 @@
         "name": "Hanu Nam",
         "role": "UX Researcher",
         "expertise": "UX 리서치・UI 디자인",
+        "image": "/images/Hanu_Nam.png",
         "bio": "사용자 중심의 디자인 철학으로 Golfary의 사용성과 아름다움을 추구합니다. 데이터 기반 인사이트로 최고의 사용자 경험을 만들어갑니다.",
         "education": "서울대학교 디자인학 석사",
         "experience": "UX 리서치 및 UI 디자인 전문 (5년)\n모바일 앱 디자인 다수"
@@ -122,6 +131,7 @@
         "name": "Sunghwa Cho",
         "role": "Tech Lead",
         "expertise": "머신러닝・시스템 아키텍처",
+        "image": "/images/Sungwha_Cho.png",
         "bio": "AI 및 머신러닝 전문가로서 대규모 데이터 처리와 개인화 추천 시스템을 설계합니다. 최첨단 기술로 사용자에게 최적의 골프 여행 경험을 제공합니다.",
         "education": "KAIST 전산학 박사",
         "experience": "전 네이버 AI 연구소 선임연구원 (4년)\n추천 시스템 및 자연어처리 전문"

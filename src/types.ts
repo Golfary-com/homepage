@@ -18,6 +18,7 @@ export interface Dictionary {
   video: {
     title: string;
     subtitle: string;
+    cta: string;
   };
   services: {
     title: string;
@@ -27,6 +28,8 @@ export interface Dictionary {
   };
   news: {
     title: string;
+    showMore: string;
+    showLess: string;
     items: {
       date: string;
       title: string;
@@ -64,10 +67,18 @@ export interface Dictionary {
   team: {
     title: string;
     subtitle: string;
+    viewDetails: string;
+    bioTitle: string;
+    educationTitle: string;
+    experienceTitle: string;
     members: {
       name: string;
       role: string;
       expertise: string;
+      image?: string;
+      bio?: string;
+      education?: string;
+      experience?: string;
     }[];
     strengthsTitle: string;
     strengths: {

@@ -4,16 +4,8 @@ import type { NextRequest } from "next/server";
 const locales = ["ko", "ja"];
 const defaultLocale = "ja";
 
-function getLocale(request: NextRequest) {
-  // Check cookie or headers if needed, for now default to ja
-  // Simple logic: check accept-language header
-  const acceptLanguage = request.headers.get("accept-language");
-  if (acceptLanguage) {
-    const preferredLocale = acceptLanguage.split(",")[0].split("-")[0];
-    if (locales.includes(preferredLocale)) {
-      return preferredLocale;
-    }
-  }
+function getLocale() {
+  // Always default to ja as requested by user
   return defaultLocale;
 }
 
@@ -28,7 +20,7 @@ export function middleware(request: NextRequest) {
   if (pathnameHasLocale) return;
 
   // Redirect if there is no locale
-  const locale = getLocale(request);
+  const locale = getLocale();
   request.nextUrl.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
 }

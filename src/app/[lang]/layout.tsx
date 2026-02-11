@@ -31,7 +31,7 @@ export default async function RootLayout({
       <body className={inter.variable}>
         <Header dict={dict} lang={params.lang} />
         {children}
-        <Footer dict={dict} />
+        <Footer dict={dict} lang={params.lang} />
       </body>
     </html>
   );
