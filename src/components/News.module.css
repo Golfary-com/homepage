@@ -1,6 +1,14 @@
 .news {
   padding: var(--spacing-3xl) 0;
   background: var(--bg-secondary);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.news.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .title {
@@ -28,6 +36,25 @@
   border: 1px solid transparent;
   align-items: center;
   gap: var(--spacing-m);
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.item.itemVisible {
+  opacity: 1;
+  transform: translateX(0);
+  animation: itemSlideIn 0.5s ease-out forwards;
+}
+
+@keyframes itemSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .link {
@@ -119,4 +146,31 @@
   .item:hover {
     transform: translateX(4px);
   }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+}
+
+.showMoreButton {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.showMoreButton:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
 }

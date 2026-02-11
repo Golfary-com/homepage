@@ -15,6 +15,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 0 40px;
+  max-width: none;
+  gap: 40px;
 }
 
 .logo {
@@ -23,6 +26,7 @@
   color: var(--primary-green);
   letter-spacing: -0.5px;
   z-index: 102;
+  margin-right: auto;
 }
 
 .nav {

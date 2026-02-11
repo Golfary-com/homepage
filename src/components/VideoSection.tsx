@@ -1,8 +1,7 @@
-import Link from "next/link";
 import styles from "./VideoSection.module.css";
 import { Dictionary } from "../types";
 
-export default function VideoSection({ dict, lang }: { dict: Dictionary; lang: string }) {
+export default function VideoSection({ dict }: { dict: Dictionary }) {
   return (
     <section className={styles.videoSection}>
       <div className="container">
@@ -12,9 +11,14 @@ export default function VideoSection({ dict, lang }: { dict: Dictionary; lang: s
         </div>
         
         <div className={styles.ctaWrapper}>
-          <Link href={`/${lang}/services`} className={styles.ctaServices}>
-            {dict.nav.services}
-          </Link>
+          <a 
+            href="https://golfary.streamlit.app/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={styles.ctaServices}
+          >
+            {dict.video.cta}
+          </a>
         </div>
 
         <div className={styles.videoWrapper}>
