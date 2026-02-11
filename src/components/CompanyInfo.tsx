@@ -1,6 +1,7 @@
 import styles from "./CompanyInfo.module.css";
 import { Dictionary } from "../types";
 import Link from "next/link";
+import NextImage from "next/image";
 
 export default function CompanyInfo({ dict, lang }: { dict: Dictionary; lang: string }) {
   return (
@@ -16,12 +17,24 @@ export default function CompanyInfo({ dict, lang }: { dict: Dictionary; lang: st
             </div>
             <div className={styles.logos}>
                <div className={styles.logoItem}>
-                 <img src="/images/Golfary_logo.png" alt="Golfary" className={styles.logoImage} />
+                 <NextImage 
+                   src="/images/Golfary_logo.png" 
+                   alt="Golfary" 
+                   width={106} 
+                   height={80} 
+                   className={styles.logoImage} 
+                 />
                  <span className={styles.logoName}>Golfary</span>
                </div>
                <div className={styles.xMark}>✕</div>
                <div className={styles.logoItem}>
-                 <img src="/images/日本紀行ロゴ.png" alt="日本紀行" className={styles.logoImage} />
+                 <NextImage 
+                   src="/images/日本紀行ロゴ.png" 
+                   alt="日本紀行" 
+                   width={110} 
+                   height={80} 
+                   className={styles.logoImage} 
+                 />
                  <span className={styles.logoName}>日本紀行</span>
                </div>
             </div>

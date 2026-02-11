@@ -1,5 +1,6 @@
 import { getDictionary } from "../../dictionaries";
 import styles from "./nihon-kiko.module.css";
+import NextImage from "next/image";
 
 export default async function NihonKikoPage({ params: { lang } }: { params: { lang: string } }) {
   const dict = await getDictionary(lang);
@@ -23,7 +24,14 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
             {/* Left Column: Logo & Intro */}
             <div className={styles.leftCol}>
               <div className={styles.logoCard}>
-                 <img src="/images/日本紀行ロゴ.png" alt={info.name} className={styles.logo} />
+                 <NextImage 
+                   src="/images/日本紀行ロゴ.png" 
+                   alt={info.name} 
+                   width={200} 
+                   height={145} 
+                   className={styles.logo} 
+                   style={{ width: 'auto', height: 'auto' }}
+                 />
               </div>
               <div className={styles.introCard}>
                 <h3>About Us</h3>

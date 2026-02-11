@@ -1,8 +1,7 @@
-import Link from "next/link";
 import styles from "./Hero.module.css";
 import { Dictionary } from "../types";
 
-export default function Hero({ dict, lang }: { dict: Dictionary; lang: string }) {
+export default function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay}></div>
