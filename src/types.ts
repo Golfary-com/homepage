@@ -14,6 +14,10 @@ export interface Dictionary {
     slogan: string;
     subSlogan: string;
   };
+  video: {
+    title: string;
+    subtitle: string;
+  };
   services: {
     title: string;
     course: { title: string; desc: string };
@@ -26,6 +30,8 @@ export interface Dictionary {
       date: string;
       title: string;
       category: string;
+      image?: string;
+      url?: string;
     }[];
   };
   company: {
@@ -39,6 +45,37 @@ export interface Dictionary {
       capital: string;
       team: string;
     };
+    partnership: {
+      title: string;
+      description: string;
+      learnMore: string;
+    };
+    nihonKiko: {
+      name: string;
+      introduction: string;
+      address: string;
+      establishment: string;
+      capital: string;
+      representative: string;
+      business: string[];
+    };
+  };
+  team: {
+    title: string;
+    subtitle: string;
+    members: {
+      name: string;
+      role: string;
+      expertise: string;
+    }[];
+    strengthsTitle: string;
+    strengths: {
+      icon: string;
+      title: string;
+      description: string;
+    }[];
+    partnershipTitle: string;
+    partnershipDesc: string;
   };
   contact: {
     title: string;

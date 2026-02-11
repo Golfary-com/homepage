@@ -1,0 +1,163 @@
+.container {
+  padding-top: 80px; /* Header height */
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Softer grey background */
+}
+
+/* Modern Hero Section */
+.hero {
+  background: white;
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Layout */
+.content {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Cards */
+.logoCard, .introCard, .tableCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.logoCard {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* Ensure white logo background blends perfectly */
+  background: white; 
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+.introCard {
+  padding: 2rem;
+}
+
+.introCard h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.introCard p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Table Card */
+.tableCard {
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1.5rem 2rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+.table th {
+  width: 30%;
+  color: #555;
+  font-weight: 600;
+  background-color: #fafafa;
+  font-size: 0.9rem;
+}
+
+.table td {
+  color: #222;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.table tr:last-child th,
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.businessList {
+  padding-left: 1.2rem;
+  margin: 0;
+  color: #444;
+}
+
+.businessList li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .logoCard {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .table th,
+  .table td {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .table th {
+    background: #fcfcfc;
+    color: #888;
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+    border-bottom: none;
+  }
+  
+  .table td {
+    padding-top: 0;
+  }
+}

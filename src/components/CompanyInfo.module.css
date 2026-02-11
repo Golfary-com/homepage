@@ -10,56 +10,88 @@
   color: var(--primary-dark);
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
+@media (max-width: 768px) {
+  .logos {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .xMark {
+    transform: rotate(90deg);
+  }
 }
 
-.infoBlock, .teamBlock {
-  flex: 1;
+.partnership {
+  text-align: center;
   background: white;
-  padding: 32px;
+  padding: 48px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.infoBlock h3, .teamBlock h3 {
-  margin-bottom: 16px;
-  color: var(--primary-green);
+.partnershipTitle {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  color: var(--primary-dark);
 }
 
-.infoBlock ul {
-  list-style: none;
-  padding: 0;
-}
-
-.infoBlock li {
-  margin-bottom: 8px;
+.intro {
+  max-width: 800px;
+  margin: 0 auto 48px;
   color: var(--text-secondary);
+  line-height: 1.6;
 }
 
-.members {
+.logos {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.logoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
-.member {
-  width: 60px;
-  height: 60px;
-  background-color: #eee;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: 700;
-  color: #888;
+.logoImage {
+  height: 80px;
+  object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    gap: 32px;
-  }
+.logoName {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.xMark {
+  font-size: 24px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.action {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.learnMoreBtn {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.learnMoreBtn:hover {
+  background-color: var(--primary-dark);
+  color: white;
 }
