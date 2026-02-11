@@ -25,10 +25,10 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
             <div className={styles.leftCol}>
               <div className={styles.logoCard}>
                  <NextImage 
-                   src="/images/日本紀行ロゴ.png" 
+                   src="/images/nihon_kikou.png" 
                    alt={info.name} 
-                   width={200} 
-                   height={145} 
+                   width={300} 
+                   height={218} 
                    className={styles.logo} 
                    style={{ width: 'auto', height: 'auto' }}
                  />
