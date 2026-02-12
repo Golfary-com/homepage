@@ -43,6 +43,8 @@ export default function Services({ dict }: { dict: Dictionary }) {
               key={index}
               className={`${styles.card} ${isVisible ? styles.cardVisible : ''}`}
               style={{ animationDelay: `${index * 0.15}s` }}
+              tabIndex={0} // Enable focus on mobile/keyboard
+              role="button" // Semantics
             >
               <div className={styles.imageWrapper}>
                 <Image

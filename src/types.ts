@@ -14,6 +14,7 @@ export interface TeamMember {
   bio?: string;
   education?: string;
   experience?: string;
+  linkedin?: string;
 }
 
 export interface NewsItem {
@@ -63,17 +64,6 @@ export interface Dictionary {
     missionDesc: string;
     vision: string;
     visionDesc: string;
-    info: {
-      title: string;
-      address: string;
-      capital: string;
-      team: string;
-    };
-    partnership: {
-      title: string;
-      description: string;
-      learnMore: string;
-    };
     nihonKiko: {
       name: string;
       introduction: string;
@@ -91,15 +81,8 @@ export interface Dictionary {
     bioTitle: string;
     educationTitle: string;
     experienceTitle: string;
+    linkedinTitle: string;
     members: TeamMember[];
-    strengthsTitle: string;
-    strengths: {
-      icon: string;
-      title: string;
-      description: string;
-    }[];
-    partnershipTitle: string;
-    partnershipDesc: string;
   };
   contact: {
     title: string;

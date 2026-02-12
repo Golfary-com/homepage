@@ -1,5 +1,6 @@
 "use client";
 
+// Header component with hamburger menu
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -99,7 +99,7 @@ export default function Team({ dict }: { dict: Dictionary }) {
               {selectedMember.education && (
                 <div className={styles.modalSection}>
                   <h3>{dict.team.educationTitle}</h3>
-                  <p>{selectedMember.education}</p>
+                  <p style={{ whiteSpace: 'pre-line' }}>{selectedMember.education}</p>
                 </div>
               )}
 
@@ -107,6 +107,22 @@ export default function Team({ dict }: { dict: Dictionary }) {
                 <div className={styles.modalSection}>
                   <h3>{dict.team.experienceTitle}</h3>
                   <p style={{ whiteSpace: 'pre-line' }}>{selectedMember.experience}</p>
+                </div>
+              )}
+
+              {selectedMember.linkedin && (
+                <div className={styles.modalSection}>
+                  <h3>{dict.team.linkedinTitle}</h3>
+                  <p>
+                    <a 
+                      href={selectedMember.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={styles.linkedinLink}
+                    >
+                      {selectedMember.linkedin}
+                    </a>
+                  </p>
                 </div>
               )}
             </div>

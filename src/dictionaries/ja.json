@@ -12,7 +12,7 @@
     "news": "ニュース"
   },
   "hero": {
-    "slogan": "観光業の再構築で地方創生を行う",
+    "slogan": "ゴルフ業界の再構築で\n地方創生を行う",
     "subSlogan": "AIで繋ぐ新しいゴルフツーリズム"
   },
   "video": {
@@ -69,17 +69,6 @@
     "missionDesc": "テクノロジーを通じてゴルフ旅行のハードルを下げ、すべての人に楽しい体験を提供します。",
     "vision": "ビジョン",
     "visionDesc": "アジアNo.1のゴルフ旅行＆ローカル観光プラットフォーム",
-    "info": {
-      "title": "企業情報",
-      "address": "住所：ソウル特別市江南区...",
-      "capital": "資本金：1億ウォン",
-      "team": "チーム紹介"
-    },
-    "partnership": {
-      "title": "パートナーシップ",
-      "description": "日本紀行との戦略的協力により、日本全国200以上のゴルフ場とのネットワークを構築。最高のゴルフ旅行体験を提供します。",
-      "learnMore": "会社概要を見る"
-    },
     "nihonKiko": {
       "name": "株式会社 日本紀行",
       "introduction": "株式会社日本紀行は、日本と世界をつなぐ総合観光・ビジネスソリューション企業です。豊富な経験とノウハウを活かし、外国人観光客の誘致から国際交流、ビジネスコンサルティングまで幅広いサービスを提供し、お客様に最高の価値をお届けするために絶えず努力しています。",
@@ -106,7 +95,7 @@
     "subtitle": "最先端AI技術とグローバルな視点で、パーソナライズされたゴルフ旅行体験を提供する",
     "viewDetails": "詳しく見る",
     "bioTitle": "紹介",
-    "educationTitle": "学歴",
+    "educationTitle": "履歴",
     "experienceTitle": "経歴",
     "members": [
       {
@@ -114,49 +103,30 @@
         "role": "Founder",
         "expertise": "観光産業・AIプロダクト開発",
         "image": "/images/Jichul_Kim.png",
-        "bio": "10年以上の観光産業経験を基に、AI技術と観光を融合させた革新的なサービスを開発しています。日本市場への深い理解を通じて、Golfaryをグローバルプラットフォームへと成長させています。",
-        "education": "東京大学 経営学修士",
-        "experience": "元JTB観光デジタル戦略チーム長 (5年)\n日本ゴルフツアー企画・運営 (7年)"
+        "bio": "父親の会社でのインバウンド日本ゴルフ産業経験を基に、AI技術と観光を融合させた革新的なサービスをリードしています。韓国と日本のゴルフ業界への深い理解を通じて、Golfaryをグローバルプラットフォームへと成長させています。",
+        "education": "九州大学共創学部４年\nAmazon Web Services (AWS) | Support Engineer 入社予定",
+        "linkedin": "https://www.linkedin.com/in/jichul-kim-06703b20b/"
       },
       {
         "name": "Hanu Nam",
         "role": "UX Researcher",
         "expertise": "UXリサーチ・UIデザイン",
         "image": "/images/Hanu_Nam.png",
-        "bio": "ユーザー中心のデザイン哲学でGolfaryの使いやすさと美しさを追求しています。データに基づいた洞察で最高のユーザー体験を創造します。",
-        "education": "ソウル大学校 デザイン学修士",
-        "experience": "UXリサーチ及びUIデザイン専門 (5年)\nモバイルアプリデザイン多数"
+        "bio": "学部時代は情報工学と教育学を学び、「人間の集中度モデリング」を研究。現在は大学院のHDI研究室にて、推薦システムの設計とUX/UI研究に従事しています。このデータ駆動型の洞察をGolfaryのシステムに反映し、ユーザビリティと審美性が調和した最高の体験を追求しています。",
+        "education": "九州大学共創学部　卒業\n九州大学大学院システム情報科学府修士１年",
+        "linkedin": "https://www.linkedin.com/in/hanu-nam-533b48249"
       },
       {
         "name": "Sunghwa Cho",
         "role": "Tech Lead",
         "expertise": "機械学習・システムアーキテクチャ",
         "image": "/images/Sungwha_Cho.png",
-        "bio": "AI及び機械学習の専門家として、大規模データ処理とパーソナライズ推薦システムを設計します。最先端技術でユーザーに最適なゴルフ旅行体験を提供します。",
-        "education": "KAIST 計算機科学博士",
-        "experience": "元Naver AI研究所 シニアリサーチャー (4年)\n推薦システム及び自然言語処理専門"
+        "bio": "フロントからインフラまでをカバーするフルスタックエンジニアとして、サービス全体の設計・開発に従事しています。実務での経験を活かし、ビジネスの視点からチームを牽引。スタートアップのローンチを見据えたプロジェクト管理を強みとしています。技術で価値を創出し、革新をカタチにすることに強い熱意を持って取り組んでいます。",
+        "education": "関西学院大学工学部情報工学課程４年\nSony | System Engineer 入社予定",
+        "linkedin": "https://www.linkedin.com/in/sunghwacho/?originalSubdomain=jp"
       }
     ],
-    "strengthsTitle": "チームの強み",
-    "strengths": [
-      {
-        "icon": "🎯",
-        "title": "観光産業への深い理解",
-        "description": "10年以上の観光業界経験を持つチームが、実際のニーズに基づいたソリューションを提供"
-      },
-      {
-        "icon": "🤖",
-        "title": "最先端のAI技術",
-        "description": "機械学習とデータサイエンスの専門知識で、パーソナライズされた旅行体験を実現"
-      },
-      {
-        "icon": "🌏",
-        "title": "グローバルな視点",
-        "description": "韓国と日本を中心に、アジア全域へのサービス展開を見据えた戦略"
-      }
-    ],
-    "partnershipTitle": "パートナーシップ",
-    "partnershipDesc": "日本紀行との戦略的協力により、日本全国200以上のゴルフ場とのネットワークを構築。最高のゴルフ旅行体験を提供します。"
+    "linkedinTitle": "LinkedIn"
   },
   "contact": {
     "title": "お問い合わせ",
