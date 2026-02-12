@@ -1,51 +1,14 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import styles from "./Team.module.css";
-import { Dictionary } from "../types";
-
-interface TeamMember {
-  name: string;
-  role: string;
-  expertise: string;
-  image?: string;
-  bio?: string;
-  education?: string;
-  experience?: string;
-}
+import { Dictionary, TeamMember } from "../types";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 export default function Team({ dict }: { dict: Dictionary }) {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px"
-      }
-    );
-
-    const section = sectionRef.current;
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
+  const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
   const openModal = (member: TeamMember) => {
     setSelectedMember(member);

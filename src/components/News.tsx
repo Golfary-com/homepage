@@ -1,39 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import styles from "./News.module.css";
 import { Dictionary } from "../types";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 export default function News({ dict }: { dict: Dictionary }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px"
-      }
-    );
-
-    const section = sectionRef.current;
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
+  const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
   const [isExpanded, setIsExpanded] = useState(false);
   const initialItemsToShow = 3;

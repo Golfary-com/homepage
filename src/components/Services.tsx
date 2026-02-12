@@ -1,42 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import styles from "./Services.module.css";
-import { Dictionary } from "../types";
 import Image from "next/image";
+import styles from "./Services.module.css";
+import { Dictionary, ServiceItem } from "../types";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 export default function Services({ dict }: { dict: Dictionary }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px"
-      }
-    );
-
-    const section = sectionRef.current;
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
-
-  const services = [
+  const services: ServiceItem[] = [
     {
       image: "/images/golf-course.jpg",
       alt: "Golf Course",
