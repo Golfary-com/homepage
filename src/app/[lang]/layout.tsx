@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_JP, Noto_Sans_KR } from "next/font/google";
 import "../globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-noto-sans-jp",
+});
+
+const notoSansKR = Noto_Sans_KR({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-noto-sans-kr",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +40,7 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang}>
-      <body className={inter.variable}>
+      <body className={`${inter.variable} ${notoSansJP.variable} ${notoSansKR.variable}`}>
         <Header dict={dict} lang={params.lang} />
         {children}
         <Footer dict={dict} lang={params.lang} />

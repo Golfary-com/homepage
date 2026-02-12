@@ -69,17 +69,6 @@
     "missionDesc": "기술을 통해 골프 여행의 장벽을 낮추고 모두에게 즐거운 경험을 선사합니다.",
     "vision": "비전",
     "visionDesc": "아시아 No.1 골프 여행 & 로컬 관광 플랫폼",
-    "info": {
-      "title": "기업 정보",
-      "address": "주소: 서울특별시 강남구 ...",
-      "capital": "자본금: 1억원",
-      "team": "팀 소개"
-    },
-    "partnership": {
-      "title": "파트너십",
-      "description": "일본 紀行과의 전략적 협력을 통해 일본 전국 200개 이상의 골프장 네트워크를 구축. 최고의 골프 여행 경험을 제공합니다.",
-      "learnMore": "회사 개요 보기"
-    },
     "nihonKiko": {
       "name": "주식회사 일본기행",
       "introduction": "주식회사 일본기행은 일본과 세계를 잇는 종합 관광 및 비즈니스 솔루션 기업입니다. 풍부한 경험과 노하우를 바탕으로 외국인 관광객 유치부터 국제 교류, 비즈니스 컨설팅까지 폭넓은 서비스를 제공하며, 고객에게 최고의 가치를 전달하기 위해 끊임없이 노력하고 있습니다.",
@@ -106,7 +95,7 @@
     "subtitle": "최첨단 AI 기술과 글로벌 시각으로 개인화된 골프 여행 경험을 제공하는",
     "viewDetails": "자세히 보기",
     "bioTitle": "소개",
-    "educationTitle": "학력",
+    "educationTitle": "이력",
     "experienceTitle": "경력",
     "members": [
       {
@@ -114,49 +103,30 @@
         "role": "Founder",
         "expertise": "관광 산업・AI 프로덕트 개발",
         "image": "/images/Jichul_Kim.png",
-        "bio": "10년 이상의 관광 산업 경험을 바탕으로 AI 기술과 관광을 접목시킨 혁신적인 서비스를 개발하고 있습니다. 일본 시장에 대한 깊은 이해를 통해 Golfary를 글로벌 플랫폼으로 성장시키고 있습니다.",
-        "education": "도쿄대학교 경영학 석사",
-        "experience": "전 JTB 관광 디지털 전략팀장 (5년)\n일본 골프 투어 기획 및 운영 (7년)"
+        "bio": "부친의 회사에서의 인바운드 일본 골프 산업 경험을 바탕으로 AI 기술과 관광을 융합한 혁신적인 서비스를 리드하고 있습니다. 한국과 일본 골프 업계에 대한 깊은 이해를 통해 Golfary를 글로벌 플랫폼으로 성장시키고 있습니다.",
+        "education": "규슈대학 공창학부 4학년\nAmazon Web Services (AWS) | Support Engineer 입사 예정",
+        "linkedin": "https://www.linkedin.com/in/jichul-kim-06703b20b/"
       },
       {
         "name": "Hanu Nam",
         "role": "UX Researcher",
         "expertise": "UX 리서치・UI 디자인",
         "image": "/images/Hanu_Nam.png",
-        "bio": "사용자 중심의 디자인 철학으로 Golfary의 사용성과 아름다움을 추구합니다. 데이터 기반 인사이트로 최고의 사용자 경험을 만들어갑니다.",
-        "education": "서울대학교 디자인학 석사",
-        "experience": "UX 리서치 및 UI 디자인 전문 (5년)\n모바일 앱 디자인 다수"
+        "bio": "학부 시절에는 정보공학과 교육학을 전공하며 ‘인간의 집중도 모델링’을 연구했습니다. 현재는 대학원 HDI 연구실에서 추천 시스템 설계 및 UX/UI 연구에 종사하고 있습니다. 이러한 데이터 기반의 통찰력을 Golfary 시스템에 반영하여, 사용성과 심미성이 조화를 이루는 최고의 경험을 추구하고 있습니다.",
+        "education": "규슈대학 공창학부 졸업\n규슈대학 대학원 시스템정보과학부 석사 1학년",
+        "linkedin": "https://www.linkedin.com/in/hanu-nam-533b48249"
       },
       {
         "name": "Sunghwa Cho",
         "role": "Tech Lead",
         "expertise": "머신러닝・시스템 아키텍처",
         "image": "/images/Sungwha_Cho.png",
-        "bio": "AI 및 머신러닝 전문가로서 대규모 데이터 처리와 개인화 추천 시스템을 설계합니다. 최첨단 기술로 사용자에게 최적의 골프 여행 경험을 제공합니다.",
-        "education": "KAIST 전산학 박사",
-        "experience": "전 네이버 AI 연구소 선임연구원 (4년)\n추천 시스템 및 자연어처리 전문"
+        "bio": "프론트엔드부터 인프라까지 아우르는 풀스택 엔지니어로서 서비스 전체의 설계 및 개발에 종사하고 있습니다. 실무 경험을 살려 비즈니스 관점에서 팀을 리딩하며, 스타트업 런칭을 목표로 한 프로젝트 관리에 강점이 있습니다. 기술로 가치를 창출하고 혁신을 실현하는 데 강한 열정을 가지고 있습니다.",
+        "education": "칸세이가쿠인대학 공학부 정보공학과정 4학년\nSony | System Engineer 입사 예정",
+        "linkedin": "https://www.linkedin.com/in/sunghwacho/?originalSubdomain=jp"
       }
     ],
-    "strengthsTitle": "팀의 강점",
-    "strengths": [
-      {
-        "icon": "🎯",
-        "title": "관광 산업에 대한 깊은 이해",
-        "description": "10년 이상의 관광업계 경험을 가진 팀이 실제 니즈에 기반한 솔루션을 제공"
-      },
-      {
-        "icon": "🤖",
-        "title": "최첨단 AI 기술",
-        "description": "머신러닝과 데이터 사이언스 전문 지식으로 개인화된 여행 경험을 실현"
-      },
-      {
-        "icon": "🌏",
-        "title": "글로벌한 시야",
-        "description": "한국과 일본을 중심으로 아시아 전역으로의 서비스 확장을 위한 전략"
-      }
-    ],
-    "partnershipTitle": "파트너십",
-    "partnershipDesc": "일본 紀行과의 전략적 협력을 통해 일본 전국 200개 이상의 골프장 네트워크를 구축. 최고의 골프 여행 경험을 제공합니다."
+    "linkedinTitle": "LinkedIn"
   },
   "contact": {
     "title": "제휴 문의",

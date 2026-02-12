@@ -72,10 +72,11 @@
   scroll-snap-align: start;
   background: white;
   padding: 0;
+  padding-bottom: var(--spacing-3xl);
   border-radius: 24px;
   text-align: center;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.4s ease, border-color 0.4s ease;
   border: 1px solid rgba(0,0,0,0.04);
   cursor: pointer;
   position: relative;
@@ -87,18 +88,6 @@
 .card.cardVisible {
   opacity: 1;
   transform: translateY(0) scale(1);
-  animation: cardFadeIn 0.6s ease-out forwards;
-}
-
-@keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 .card::before {
@@ -125,7 +114,7 @@
 
 .cardHover {
   position: absolute;
-  bottom: var(--spacing-xl);
+  bottom: var(--spacing-l);
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -217,7 +206,7 @@
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: 0;
   padding: 0 var(--spacing-l);
 }
 
@@ -386,6 +375,19 @@
   font-size: var(--font-size-base);
 }
 
+.linkedinLink {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.linkedinLink:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
 /* Mobile Optimization */
 @media (max-width: 768px) {
   .grid {
@@ -443,11 +445,11 @@
   }
 
   .modalName {
-    font-size: var(--font-size-xl);
+    font-size: 1.75rem; /* Increased from font-size-xl */
   }
 
   .modalRole {
-    font-size: var(--font-size-xs);
+    font-size: 1rem; /* Increased from font-size-xs */
   }
 
   .modalSection {
@@ -460,7 +462,7 @@
   }
 
   .modalSection h3 {
-    font-size: var(--font-size-base);
+    font-size: 1.25rem; /* Increased from font-size-base */
   }
 
   .modalSection h3::before {
@@ -468,7 +470,7 @@
   }
 
   .modalSection p {
-    font-size: var(--font-size-sm);
-    line-height: 1.7;
+    font-size: 1.1rem; /* Increased from font-size-sm */
+    line-height: 1.6;
   }
 }

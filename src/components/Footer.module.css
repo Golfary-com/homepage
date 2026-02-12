@@ -2,7 +2,7 @@
   background-color: var(--bg-dark);
   color: var(--text-inverted);
   padding: 60px 0;
-  margin-top: 100px;
+  margin-top: 0; /* Removed gap */
 }
 
 .inner {
@@ -11,6 +11,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+  max-width: none;
+  padding: 0 40px;
 }
 
 .info {
