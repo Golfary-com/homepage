@@ -1,3 +1,29 @@
+// Reusable type definitions for components
+export interface ServiceItem {
+  image: string;
+  alt: string;
+  title: string;
+  desc: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  expertise: string;
+  image?: string;
+  bio?: string;
+  education?: string;
+  experience?: string;
+}
+
+export interface NewsItem {
+  date: string;
+  title: string;
+  category: string;
+  image?: string;
+  url?: string;
+}
+
 export interface Dictionary {
   common: {
     title: string;
@@ -30,13 +56,7 @@ export interface Dictionary {
     title: string;
     showMore: string;
     showLess: string;
-    items: {
-      date: string;
-      title: string;
-      category: string;
-      image?: string;
-      url?: string;
-    }[];
+    items: NewsItem[];
   };
   company: {
     mission: string;
@@ -71,15 +91,7 @@ export interface Dictionary {
     bioTitle: string;
     educationTitle: string;
     experienceTitle: string;
-    members: {
-      name: string;
-      role: string;
-      expertise: string;
-      image?: string;
-      bio?: string;
-      education?: string;
-      experience?: string;
-    }[];
+    members: TeamMember[];
     strengthsTitle: string;
     strengths: {
       icon: string;
