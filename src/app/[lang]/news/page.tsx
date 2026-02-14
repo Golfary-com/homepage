@@ -16,7 +16,7 @@ export default async function NewsPage({ params: { lang } }: { params: { lang: s
       
       <div className={styles.buttonWrapper}>
         <a href={`/${lang}`} className={styles.homeButton}>
-          {lang === 'ja' ? 'ホームに戻る' : '메인으로 돌아가기'}
+          {dict.common.backToHome}
         </a>
       </div>
     </main>

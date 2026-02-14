@@ -64,6 +64,11 @@ export default function NewsList({ items, lang }: { items: NewsItem[]; lang: str
                   </span>
                 </div>
                 <h3 className={styles.itemTitle}>{item.title}</h3>
+                {item.content && (
+                  <p className={styles.description}>
+                    {item.content.length > 120 ? `${item.content.substring(0, 120)}...` : item.content}
+                  </p>
+                )}
               </div>
             </>
           );

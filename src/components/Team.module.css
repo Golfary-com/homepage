@@ -3,6 +3,14 @@
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.team.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .team::before {
@@ -20,18 +28,11 @@
   text-align: center;
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: var(--spacing-l);
   position: relative;
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  
-  /* Gradient Text */
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 .subtitle {
@@ -39,7 +40,7 @@
   font-size: var(--font-size-lg);
   color: var(--text-secondary);
   max-width: 700px;
-  margin: 0 auto var(--spacing-2xl);
+  margin: 0 auto var(--spacing-xl);
   line-height: 1.6;
 }
 
@@ -56,7 +57,6 @@
 
 .card {
   flex: 0 0 340px;
-  scroll-snap-align: start;
   background: white;
   padding: 0;
   padding-bottom: var(--spacing-3xl);
@@ -199,16 +199,49 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .card {
-    flex: 0 0 300px;
-    scroll-snap-align: center;
-  }
-  
   .grid {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    gap: var(--spacing-l);
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible; /* Allow hover lift effect */
+    justify-content: flex-start;
+    padding: var(--spacing-xl) var(--spacing-m); /* Sufficient padding */
+    scroll-snap-type: x mandatory;
+    gap: var(--spacing-m);
+    -webkit-overflow-scrolling: touch;
+    
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .grid::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .card {
+    flex: 0 0 85vw; /* Show one card prominently */
+    max-width: 320px;
+    width: 85vw;
+    height: auto;
+    margin-bottom: var(--spacing-l);
+  }
+
+  /* Restore desktop-like hover behavior */
+  .card .cardHover {
+    opacity: 0; /* Hidden by default */
+    bottom: var(--spacing-l);
+  }
+
+  .card:hover .cardHover,
+  .card:active .cardHover,
+  .card:focus .cardHover {
+    opacity: 1; /* Show on interaction */
+  }
+
+  .team {
+    padding: var(--spacing-2xl) 0;
   }
 }
 
@@ -377,12 +410,7 @@
   color: var(--primary-dark);
 }
 
-/* Mobile Optimization */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .modalOverlay {
     padding: var(--spacing-m) 0;
     align-items: flex-end;

@@ -2,10 +2,7 @@ import Link from "next/link";
 import styles from "./Footer.module.css";
 import { Dictionary } from "../types";
 
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: string }) {
-
-
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>

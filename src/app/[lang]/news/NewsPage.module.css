@@ -135,6 +135,33 @@
   color: #7B1FA2;
 }
 
+.itemTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+  transition: color 0.3s ease;
+  font-family: var(--font-family-primary);
+}
+
+.item:hover .itemTitle {
+  color: var(--primary-dark);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: var(--spacing-s);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .filterContainer {
   display: flex;
   justify-content: center;
@@ -146,7 +173,7 @@
 .filterButton {
   padding: 10px 28px;
   border-radius: 100px;
-  border: 1px solid var(--border-color); /* Need to ensure this var exists or use generic */
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: transparent;
   color: var(--text-secondary);
   font-size: 15px;
@@ -223,9 +250,8 @@
     padding: 2px 6px;
   }
 
-  .itemTitle { /* Assuming title class usage matches component */
+  .itemTitle {
     font-size: var(--font-size-base);
-    font-family: var(--font-family-primary); /* Ensure font consistency */
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -259,7 +285,7 @@
   justify-content: center;
   padding: 12px 32px;
   background: white;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   font-size: 15px;
   font-weight: 600;

@@ -154,11 +154,7 @@
   .title {
     font-size: 2rem;
     margin: 0 auto;
-    color: var(--text-primary) !important;
-    background: none !important;
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
-    -webkit-text-fill-color: initial !important;
+    color: var(--text-primary);
   }
 
   .introCard, .detailsCard {

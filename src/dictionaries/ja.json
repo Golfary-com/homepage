@@ -1,7 +1,10 @@
 {
   "common": {
     "title": "Golfary",
-    "description": "観光業の再構築で地方創生を行う"
+    "description": "観光業の再構築で地方創生を行う",
+    "backToHome": "ホームに戻る",
+    "backToNews": "ニュース一覧に戻る",
+    "relatedLinks": "関連リンク"
   },
   "nav": {
     "home": "ホーム",
@@ -149,6 +152,17 @@
       "establishment": "平成29年6月1日",
       "capital": "500万円",
       "representative": "金 英鎬",
+      "aboutUs": "私たちについて",
+      "globalBusiness": "Global Business & Tourism Solution",
+      "overview": "会社概要",
+      "labels": {
+        "name": "商号",
+        "address": "本店",
+        "establishment": "会社成立の年月日",
+        "capital": "資本金の額",
+        "representative": "代表取締役",
+        "business": "目的"
+      },
       "business": [
         "外国人観光客の受入れの手配及び案内業務",
         "国際交流事業、姉妹都市交流事業の企画及び運営",

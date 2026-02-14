@@ -9,16 +9,12 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
   const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
   const initialItemsToShow = 3;
-  const sortedItems = [...dict.news.items].sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
-
-  const pressItems = sortedItems.filter(item => item.category === 'Press');
-  const otherItems = sortedItems.filter(item => item.category !== 'Press');
+  // Filter for Press items only and sort by date descending
+  const pressItems = dict.news.items
+    .filter(item => item.category === 'Press')
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
-  const items = [...pressItems, ...otherItems];
-  const visibleItems = items.slice(0, initialItemsToShow);
-
+  const visibleItems = pressItems.slice(0, initialItemsToShow);
 
   return (
     <section 
@@ -27,7 +23,7 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
       id="news"
     >
       <div className="container">
-        <h2 className={styles.title}>{dict.news.title}</h2>
+        <h2 className={`${styles.title} gradient-text`}>{dict.news.title}</h2>
         <div className={styles.list}>
           {visibleItems.map((item, index) => {
             const Content = () => (
@@ -46,6 +42,11 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
                     </span>
                   </div>
                   <h3 className={styles.itemTitle}>{item.title}</h3>
+                  {item.content && (
+                    <p className={styles.description}>
+                      {item.content.length > 80 ? `${item.content.substring(0, 80)}...` : item.content}
+                    </p>
+                  )}
                 </div>
               </>
             );

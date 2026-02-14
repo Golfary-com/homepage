@@ -312,6 +312,15 @@ img {
   animation: slideInRight var(--transition-slow);
 }
 
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
 /* Responsive Typography */
 @media (max-width: 768px) {
   :root {

@@ -6,7 +6,7 @@ export default function VideoSection({ dict }: { dict: Dictionary }) {
     <section className={styles.videoSection}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className={styles.title}>{dict.video.title}</h2>
+          <h2 className={`${styles.title} gradient-text`}>{dict.video.title}</h2>
           <p className={styles.subtitle}>{dict.video.subtitle}</p>
         </div>
         
