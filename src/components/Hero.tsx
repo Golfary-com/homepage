@@ -16,7 +16,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
-    }, 6000); // Change every 6 seconds
+    }, 5000); // Change every 5 seconds for smoother overlap
 
     return () => clearInterval(interval);
   }, []);
