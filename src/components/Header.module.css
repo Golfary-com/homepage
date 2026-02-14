@@ -1,8 +1,10 @@
 .header {
   height: 80px;
   background-color: transparent; /* Start transparent */
-  position: sticky;
+  position: fixed; /* Overlay on top of Hero */
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   border-bottom: 1px solid transparent;
   display: flex;
