@@ -8,7 +8,7 @@
     "services": "서비스",
     "team": "팀 소개",
     "company": "회사 소개",
-    "contact": "제휴 문의",
+    "contact": "CONTACT",
     "news": "뉴스"
   },
   "hero": {
@@ -138,9 +138,9 @@
     ]
   },
   "company": {
-    "mission": "미션",
+    "mission": "MISSION",
     "missionDesc": "기술을 통해 골프 여행의 장벽을 낮추고 모두에게 즐거운 경험을 선사합니다.",
-    "vision": "비전",
+    "vision": "VISION",
     "visionDesc": "아시아 No.1 골프 여행 & 로컬 관광 플랫폼",
     "nihonKiko": {
       "name": "주식회사 일본기행",

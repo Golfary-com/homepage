@@ -8,7 +8,7 @@
     "services": "サービス",
     "team": "チーム紹介",
     "company": "会社概要",
-    "contact": "お問い合わせ",
+    "contact": "CONTACT",
     "news": "ニュース"
   },
   "hero": {
@@ -138,9 +138,9 @@
     ]
   },
   "company": {
-    "mission": "ミッション",
+    "mission": "MISSION",
     "missionDesc": "テクノロジーを通じてゴルフ旅行のハードルを下げ、すべての人に楽しい体験を提供します。",
-    "vision": "ビジョン",
+    "vision": "VISION",
     "visionDesc": "アジアNo.1のゴルフ旅行＆ローカル観光プラットフォーム",
     "nihonKiko": {
       "name": "株式会社 日本紀行",
