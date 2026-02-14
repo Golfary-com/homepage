@@ -214,12 +214,16 @@
 @media (max-width: 768px) {
   .card {
     flex: 0 0 300px;
+    scroll-snap-align: center;
   }
   
   .grid {
-    margin: 0 calc(-1 * var(--spacing-l));
-    padding-left: var(--spacing-l);
-    padding-right: var(--spacing-l);
+    margin: 0;
+    /* Center the active item by adding side padding equal to (screen/2 - card/2) */
+    /* Since card is 300px, half is 150px */
+    padding: 0 calc(50% - 150px);
+    gap: 20px;
+    padding-bottom: 20px; /* Space for shadow */
   }
 }
 
