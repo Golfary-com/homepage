@@ -1,118 +1,117 @@
 .container {
-  padding-top: 80px; /* Header height */
+  padding-top: 80px; /* Header height offset */
+  background: var(--bg-secondary);
   min-height: 100vh;
-  background-color: #f8f9fa; /* Softer grey background */
 }
 
-/* Modern Hero Section */
-.hero {
+.header {
   background: white;
-  padding: 4rem 0 3rem;
-  text-align: center;
-  border-bottom: 1px solid #eaeaea;
+  padding: 80px 0 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logoWrapper {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.logo {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #111;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+  width: fit-content;
 }
 
 .subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-secondary);
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-/* Layout */
 .content {
-  padding: 4rem 0;
+  padding: 60px 0 100px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-/* Cards */
-.logoCard, .introCard, .tableCard {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.03);
-}
-
-.logoCard {
-  padding: 2rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-  /* Ensure white logo background blends perfectly */
-  background: white; 
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.logo {
-  width: 100%;
-  height: auto;
-  max-width: 350px;
-}
-
-.introCard {
-  padding: 2rem;
-}
-
-.introCard h3 {
-  font-size: 1.2rem;
+.sectionTitle {
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #333;
-  border-bottom: 2px solid #f0f0f0;
-  padding-bottom: 0.5rem;
-  display: inline-block;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 
-.introCard p {
-  color: #555;
+.introCard, .detailsCard {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.introText {
+  font-size: 1.1rem;
   line-height: 1.8;
-  font-size: 0.95rem;
+  color: var(--text-secondary);
+  white-space: pre-line;
 }
 
-/* Table Card */
-.tableCard {
-  padding: 0;
+.tableWrapper {
+  overflow-x: auto;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 1rem;
 }
 
-.table th,
-.table td {
-  padding: 1.5rem 2rem;
+.table th, .table td {
+  padding: 20px;
   text-align: left;
   border-bottom: 1px solid #f0f0f0;
   vertical-align: top;
-}
-
-.table th {
-  width: 30%;
-  color: #555;
-  font-weight: 600;
-  background-color: #fafafa;
-  font-size: 0.9rem;
-}
-
-.table td {
-  color: #222;
-  font-weight: 500;
-  font-size: 0.95rem;
 }
 
 .table tr:last-child th,
@@ -120,44 +119,67 @@
   border-bottom: none;
 }
 
+.table th {
+  width: 200px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: #fcfcfc;
+  white-space: nowrap;
+}
+
+.table td {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
 .businessList {
-  padding-left: 1.2rem;
   margin: 0;
-  color: #444;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .businessList li {
-  margin-bottom: 0.5rem;
   line-height: 1.6;
 }
 
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
   }
   
-  .logoCard {
-    margin-bottom: 1.5rem;
+  .title {
+    font-size: 2rem;
+    margin: 0 auto;
+    color: var(--text-primary) !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: initial !important;
   }
-}
 
-@media (max-width: 600px) {
-  .table th,
-  .table td {
+  .introCard, .detailsCard {
+    padding: 24px;
+  }
+
+  .table th, .table td {
     display: block;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 12px 0;
   }
 
   .table th {
-    background: #fcfcfc;
-    color: #888;
-    padding-bottom: 0.5rem;
-    font-size: 0.85rem;
-    border-bottom: none;
+    background: none;
+    padding-bottom: 4px;
+    font-size: 0.9rem;
+    color: var(--text-secondary); /* Was var(--primary-green) */
   }
-  
+
   .table td {
     padding-top: 0;
+    padding-bottom: 24px;
   }
 }

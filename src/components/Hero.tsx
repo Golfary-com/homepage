@@ -64,12 +64,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
         </div>
       </div>
       {/* Scroll Indicator */}
-      <div className={styles.scrollIndicator}>
-        <div className={styles.mouse}>
-          <div className={styles.wheel}></div>
-        </div>
-        <div className={styles.arrow}></div>
-      </div>
+
     </section>
   );
 }

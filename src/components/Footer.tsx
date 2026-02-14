@@ -4,6 +4,8 @@ import { Dictionary } from "../types";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: string }) {
+  const company = dict.company.nihonKiko;
+
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>

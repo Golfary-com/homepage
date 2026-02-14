@@ -8,12 +8,24 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
 
   return (
     <main className={styles.container}>
-      {/* Hero Section */}
-      <section className={styles.hero}>
+      {/* Hero / Header Section */}
+      <section className={styles.header}>
         <div className="container">
-           <div className={styles.heroContent}>
-              <h1 className={styles.title}>{info.name}</h1>
-              <p className={styles.subtitle}>Global Business & Tourism Solution</p>
+           <div className={styles.headerContent}>
+              <div className={styles.logoWrapper}>
+                 <NextImage 
+                   src="/images/nihon_kikou.png" 
+                   alt={info.name} 
+                   width={120} 
+                   height={120} 
+                   className={styles.logo}
+                   priority
+                 />
+              </div>
+              <div className={styles.headerText}>
+                <h1 className={styles.title}>{info.name}</h1>
+                <p className={styles.subtitle}>Global Business & Tourism Solution</p>
+              </div>
            </div>
         </div>
       </section>
@@ -21,27 +33,16 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
       <section className={styles.content}>
         <div className="container">
           <div className={styles.grid}>
-            {/* Left Column: Logo & Intro */}
-            <div className={styles.leftCol}>
-              <div className={styles.logoCard}>
-                 <NextImage 
-                   src="/images/nihon_kikou.png" 
-                   alt={info.name} 
-                   width={300} 
-                   height={218} 
-                   className={styles.logo} 
-                   style={{ width: 'auto', height: 'auto' }}
-                 />
-              </div>
-              <div className={styles.introCard}>
-                <h3>About Us</h3>
-                <p>{info.introduction}</p>
-              </div>
+            {/* Introduction Card */}
+            <div className={styles.introCard}>
+              <h3 className={styles.sectionTitle}>About Us</h3>
+              <p className={styles.introText}>{info.introduction}</p>
             </div>
 
-            {/* Right Column: Details Table */}
-            <div className={styles.rightCol}>
-              <div className={styles.tableCard}>
+            {/* Company Details Table */}
+            <div className={styles.detailsCard}>
+              <h3 className={styles.sectionTitle}>{lang === 'ko' ? '회사 개요' : '会社概要'}</h3>
+              <div className={styles.tableWrapper}>
                 <table className={styles.table}>
                   <tbody>
                     <tr>
@@ -67,11 +68,11 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
                     <tr>
                       <th>{lang === 'ko' ? '사업목적' : '目的'}</th>
                       <td>
-                        <ol className={styles.businessList}>
+                        <ul className={styles.businessList}>
                           {info.business.map((item, index) => (
                             <li key={index}>{item}</li>
                           ))}
-                        </ol>
+                        </ul>
                       </td>
                     </tr>
                   </tbody>
