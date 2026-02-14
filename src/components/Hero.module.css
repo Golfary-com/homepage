@@ -28,20 +28,32 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  /* Slow down transform reset (10s) so it doesn't look like it's shrinking fast while fading out */
-  transition: opacity 2.5s ease-in-out, transform 10s linear; 
-  transform: scale(1);
+  z-index: 0;
+  /* 
+    Critical Fix: 
+    When changing from active to inactive:
+    - Opacity fades out over 2.5s (immediate start)
+    - Transform waits 3s (delay) before resetting to scale(1).
+      This ensures the image stays zoomed (at 1.1) while disappearing,
+      preventing the visible "shrink back" effect.
+  */
+  transform: scale(1.0);
+  transition: opacity 2.5s ease-in-out, transform 0s linear 3s;
 }
 
 .activeSlide {
   opacity: 1;
-  animation: kenBurns 8s ease-out forwards;
+  z-index: 1;
+  transform: scale(1.1);
+  /* 
+    Enter Phase: 
+    - Scale up to 1.1 over 5s (matching interval)
+    - Fade in over 2.5s
+  */
+  transition: opacity 2.5s ease-in-out, transform 5s linear;
 }
 
-@keyframes kenBurns {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.1); }
-}
+/* Removed @keyframes kenBurns to rely purely on transition state */
 
 /* Bright Overlay for "Brighter" Feel - Reduced Transparency */
 .hero::before {
