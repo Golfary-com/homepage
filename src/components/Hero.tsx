@@ -38,7 +38,13 @@ export default function Hero({ dict }: { dict: Dictionary }) {
       <div className={`container ${styles.grid}`}>
         {/* Left Column: Text & CTA */}
         <div className={styles.content}>
-          <h1 className={styles.title}>{dict.hero.slogan}</h1>
+          <h1 className={styles.title}>
+            {dict.hero.slogan.split('\n').map((line, index) => (
+              <span key={index} className={styles.titleLine}>
+                {line}
+              </span>
+            ))}
+          </h1>
           <p className={styles.subtitle}>{dict.hero.subSlogan}</p>
           <div className={styles.actions}>
             {/* Contact button removed, Service button moved to bottom */}
@@ -56,6 +62,13 @@ export default function Hero({ dict }: { dict: Dictionary }) {
             <p className={styles.cardText}>{dict.company.visionDesc}</p>
           </div>
         </div>
+      </div>
+      {/* Scroll Indicator */}
+      <div className={styles.scrollIndicator}>
+        <div className={styles.mouse}>
+          <div className={styles.wheel}></div>
+        </div>
+        <div className={styles.arrow}></div>
       </div>
     </section>
   );

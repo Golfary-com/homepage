@@ -1,37 +1,41 @@
 :root {
-  /* Brand Colors */
-  --primary-green: #00A651;
-  --primary-dark: #006B35;
+  /* Brand Colors - More Vibrant */
+  --primary-green: #00C853; /* Brighter Green */
+  --primary-dark: #009624;
   --primary-light: #E8F5E9;
   --accent-lime: #D9E021;
-  --accent-gold: #FFB300;
+  --accent-gold: #FFD600; /* Brighter Gold */
   
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #00A651 0%, #006B35 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(0, 166, 81, 0.95) 0%, rgba(0, 107, 53, 0.95) 100%);
-  --gradient-accent: linear-gradient(90deg, #D9E021 0%, #FFB300 100%);
+  /* Gradients - Smoother & Modern */
+  --gradient-primary: linear-gradient(135deg, #00C853 0%, #009624 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(0, 200, 83, 0.9) 0%, rgba(0, 150, 36, 0.95) 100%);
+  --gradient-accent: linear-gradient(90deg, #D9E021 0%, #FFD600 100%);
+  --gradient-glass: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   
-  /* Text Colors */
-  --text-primary: #1A1A1A;
-  --text-secondary: #666666;
-  --text-tertiary: #999999;
+  /* Text Colors - Higher Contrast */
+  --text-primary: #111827; /* Cool Black */
+  --text-secondary: #4B5563; /* Cool Gray */
+  --text-tertiary: #9CA3AF;
   --text-inverted: #FFFFFF;
 
   /* Backgrounds */
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F8FAF9;
-  --bg-tertiary: #F0F4F1;
-  --bg-dark: #1A1A1A;
-  --bg-card: #FFFFFF;
+  --bg-secondary: #F9FAFB;
+  --bg-tertiary: #F3F4F6;
+  --bg-dark: #111827;
+  --bg-card: rgba(255, 255, 255, 0.8);
   
-  /* Borders & Shadows */
+  /* Borders & Shadows - Soft & Deep */
   --border-radius-sm: 8px;
-  --border-radius-md: 12px;
-  --border-radius-lg: 20px;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
-  --shadow-hover: 0 12px 40px rgba(0, 166, 81, 0.2);
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 32px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 15px rgba(0, 200, 83, 0.3);
   
   /* Spacing */
   --spacing-xs: 4px;
@@ -41,33 +45,38 @@
   --spacing-xl: 48px;
   --spacing-2xl: 64px;
   --spacing-3xl: 96px;
-  --container-width: 1200px;
+  --container-width: 1280px; /* Wider container */
   
-  /* Typography */
-  --font-family-primary: var(--font-inter), var(--font-noto-sans-jp), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', sans-serif;
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */
-  --font-size-2xl: 1.5rem;    /* 24px */
-  --font-size-3xl: 2rem;      /* 32px */
-  --font-size-4xl: 2.5rem;    /* 40px */
-  --font-size-5xl: 3.5rem;    /* 56px */
+  /* Typography - Fluid & Modern */
+  --font-family-primary: var(--font-inter), var(--font-noto-sans-jp), var(--font-noto-sans-kr), system-ui, -apple-system, sans-serif;
+  
+  /* Fluid Typography using clamp */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: clamp(1.5rem, 2vw + 1rem, 1.875rem);
+  --font-size-3xl: clamp(1.875rem, 3vw + 1rem, 2.25rem);
+  --font-size-4xl: clamp(2.25rem, 4vw + 1rem, 3rem);
+  --font-size-5xl: clamp(3rem, 5vw + 1rem, 4.5rem);
+  
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
   
   /* Line Heights */
-  --line-height-tight: 1.2;
-  --line-height-base: 1.6;
-  --line-height-relaxed: 1.8;
+  --line-height-tight: 1.1;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.75;
   
   /* Transitions */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-base: 0.3s ease-in-out;
-  --transition-slow: 0.5s ease-in-out;
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   
   /* Breakpoints */
   --breakpoint-sm: 640px;
@@ -84,6 +93,10 @@
   --z-tooltip: 1060;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset & Base Styles */
 * {
   box-sizing: border-box;
@@ -91,7 +104,8 @@
 
 body {
   color: var(--text-primary);
-  background: var(--bg-primary);
+  background: linear-gradient(to bottom, #ffffff, #f8fafc); /* Subtle depth */
+  background-attachment: fixed; /* Parallax-like feel */
   font-family: var(--font-family-primary);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
@@ -99,6 +113,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Language Context Optimization */
@@ -115,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   color: var(--text-primary);
+  letter-spacing: -0.03em; /* Tight, modern tracking */
 }
 
 h1 {
