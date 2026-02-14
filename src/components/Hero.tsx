@@ -1,9 +1,39 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import { Dictionary } from "../types";
 
+const HERO_IMAGES = [
+  '/images/golf_hero_real.jpg',
+  '/images/CoverPage.png',
+  '/images/golf-course.jpg'
+];
+
 export default function Hero({ dict }: { dict: Dictionary }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % HERO_IMAGES.length);
+    }, 6000); // Change every 6 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className={styles.hero}>
+      {/* Background Slider */}
+      <div className={styles.sliderContainer}>
+        {HERO_IMAGES.map((src, index) => (
+          <div 
+            key={index}
+            className={`${styles.slide} ${index === currentImageIndex ? styles.activeSlide : ''}`}
+            style={{ backgroundImage: `url(${src})` }}
+          />
+        ))}
+      </div>
+
       <div className={styles.overlay}></div>
       <div className={`container ${styles.grid}`}>
         {/* Left Column: Text & CTA */}
