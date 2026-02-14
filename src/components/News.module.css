@@ -13,11 +13,32 @@
 
 .title {
   font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-3xl);
+  font-weight: 800; /* Bolder */
+  margin-bottom: 60px;
   text-align: center;
-  color: var(--text-primary);
+  color: var(--text-primary); /* Fallback */
+  background: linear-gradient(135deg, var(--text-primary) 0%, #555 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-family-primary);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  background: var(--primary-green);
+  border-radius: 2px;
 }
 
 .list {
@@ -95,6 +116,7 @@
   font-size: var(--font-size-base);
   color: var(--text-tertiary);
   font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-primary);
 }
 
 .category {
@@ -104,6 +126,7 @@
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-family: var(--font-family-primary);
   /* color: white; removed */
   /* box-shadow: removed */
 }
@@ -130,6 +153,7 @@
   line-height: 1.4;
   margin: 0;
   transition: color 0.3s ease;
+  font-family: var(--font-family-primary);
 }
 
 .item:hover .itemTitle {
@@ -165,22 +189,41 @@
 }
 
 .showMoreButton {
+  position: relative;
   background: white;
   border: 1px solid var(--border-color);
-  padding: 12px 32px;
-  border-radius: 50px;
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-secondary);
+  padding: 14px 40px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  font-family: var(--font-family-primary);
+}
+
+.showMoreButton::after {
+  content: '→';
+  font-family: sans-serif;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .showMoreButton:hover {
-  background: var(--primary-green);
+  background: var(--text-primary);
   color: white;
-  border-color: var(--primary-green);
+  border-color: var(--text-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding-right: 32px; /* Adjust padding to accommodate movement if needed, but flex gap handles it well */
+}
+
+.showMoreButton:hover::after {
+  transform: translateX(4px);
 }

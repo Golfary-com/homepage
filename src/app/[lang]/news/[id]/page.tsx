@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "../../dictionaries";
 import styles from "./ArticlePage.module.css";
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default async function NewsArticlePage({ 
   params: { lang, id } 
 }: { 
@@ -17,6 +19,7 @@ export default async function NewsArticlePage({
 
   return (
     <main className={styles.container}>
+      <ScrollToTop />
       <article className={styles.article}>
         <header className={styles.header}>
           <div className={styles.meta}>
