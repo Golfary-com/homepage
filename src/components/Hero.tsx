@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import styles from "./Hero.module.css";
 import { Dictionary } from "../types";
 
@@ -42,9 +41,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
           <h1 className={styles.title}>{dict.hero.slogan}</h1>
           <p className={styles.subtitle}>{dict.hero.subSlogan}</p>
           <div className={styles.actions}>
-            <Link href="/contact" className={styles.ctaPrimary}>
-              {dict.nav.contact}
-            </Link>
+            {/* Contact button removed, Service button moved to bottom */}
           </div>
         </div>
 
