@@ -41,6 +41,62 @@
     "showLess": "접기",
     "items": [
       {
+        "id": "kitakyushu-ai-contest-2025",
+        "date": "2025.08.27",
+        "title": "지역 창생·사회 과제 해결 AI 프로그래밍 콘테스트 2025 우승",
+        "category": "Press",
+        "image": "/images/優勝記念AWS.jpg",
+        "content": "Golfary 팀(대표: Jichul Kim)은 2025년 8월 27일에 개최된 '지역 창생·사회 과제 해결 AI 프로그래밍 콘테스트 2025'에서 기타큐슈 지역 우승을 차지했습니다.\n\n본 콘테스트는 AI 기술을 활용하여 지역 과제를 해결하고 지방 창생을 추진하는 것을 목적으로 합니다. Golfary는 골프 투어리즘을 통한 지역 경제 활성화와 AI를 활용한 맞춤형 여행 경험 제공을 제안하여 그 혁신성과 실현 가능성을 높게 평가받았습니다.\n\n특히 기타큐슈 지역의 관광 자원과 골프장을 연계하여 인바운드 관광객을 유치하는 구체적인 계획이 심사위원들로부터 극찬을 받았습니다. 이번 수상을 계기로 Golfary는 기타큐슈시 및 주변 지역과의 연계를 더욱 강화하고, 실증 실험을 통해 서비스의 사회적 구현을 가속화해 나갈 것입니다.\n\n앞으로도 Golfary는 기술의 힘으로 지방의 매력을 세계에 알리고 지속 가능한 관광 모델 구축에 기여해 나갈 것입니다.",
+        "links": [
+          {
+            "title": "지역 창생·사회 과제 해결 AI 프로그래밍 콘테스트 2025 최종 심사회",
+            "url": "https://youtu.be/RymL_CVFe-A?si=BFg93IrI137W2zFl",
+            "image": "https://img.youtube.com/vi/RymL_CVFe-A/maxresdefault.jpg",
+            "description": "YouTube에서 공개 중인 최종 심사회 발표 영상을 확인하실 수 있습니다."
+          },
+          {
+            "title": "AWS 디지털 사회 실현 투어 2025",
+            "url": "https://aws.amazon.com/jp/government-education/worldwide/japan/nationwide-2025/",
+            "description": "콘테스트 모집 요강 및 상세 정보가 게재되어 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "kyoto-global-venture-2025",
+        "date": "2025.12.14",
+        "title": "KYOTO 대학생 글로벌 벤처 콘테스트 3rd Prize 수상",
+        "category": "Press",
+        "image": "/images/Kyoto3rdPrize.jpg",
+        "content": "Golfary 팀은 2025년 12월 12일부터 14일까지 개최된 'KYOTO 대학생 글로벌 벤처 콘테스트'에서 3rd Prize(3위)를 수상했습니다.\n\n이번 콘테스트는 국제적인 규모로 개최되어 다양한 문화적 배경을 가진 학생 창업가들이 모였습니다. 기술적인 부분뿐만 아니라, 다른 팀들의 발표를 통해 경영적인 관점과 비즈니스 모델 구축에 대해서도 많은 배움을 얻을 수 있었습니다.\n\n특히, 현지 지자체 관계자 분들과 직접 소통하며 Golfary가 제안하는 인바운드 관광 시책을 통한 관광객 유입의 가능성을 재확인할 수 있었던 것은 향후 사업 전개에 있어 매우 귀중한 시간이 되었습니다。",
+        "links": [
+          {
+            "title": "IE University 공식 사이트",
+            "url": "https://www.ie.education/",
+            "description": "주최 대학인 IE University의 웹사이트입니다."
+          }
+        ]
+      },
+      {
+        "id": "fukuoka-biz-contest-2025",
+        "date": "2025.10.25",
+        "title": "FUKUOKA 학생 비즈니스 콘테스트 2025 우수상",
+        "category": "Press",
+        "image": "/images/優勝記念写真飯塚.jpg",
+        "content": "Golfary 팀(대표: Jichul Kim)은 2025년 10월 25일에 개최된 'FUKUOKA 학생 비즈니스 콘테스트 2025'에서 우수상을 수상했습니다.\n\n이번 콘테스트에서 Golfary는 '인바운드 타겟 골프 투어리즘 DX 플랫폼'을 제안했습니다. 아시아 최대 규모의 골프 시장을 보유한 일본 여행 시 발생하는 페인 포인트(언어 장벽, 복잡한 예약 절차, 이동 수단 확보 등)를 AI 기술을 활용하여 해결하는 원스톱 솔루션입니다.\n\n특히, 단순한 구상 단계에 그치지 않고 실제로 사용 가능한 프로덕트(MVP)를 이미 개발하여 보유하고 있다는 점이 높은 실현 가능성으로서 심사위원들의 극찬을 받았습니다. 또한, 급증하는 인바운드 수요를 지역 경제 활성화로 연결하는 '지역 창생'에 대한 기여도 역시 높게 평가받았습니다.\n\n앞으로 실증 실험을 통해 서비스를 고도화하고, 지속 가능한 관광 모델 구축 및 사회적 구현을 가속화해 나갈 것입니다.",
+        "links": [
+          {
+            "title": "콘테스트 상세",
+            "url": "http://iizukafriendship.net/info/fgb2025/",
+            "description": "FUKUOKA 학생 비즈니스 콘테스트 2025의 공식 정보입니다."
+          },
+          {
+            "title": "결과 발표 자료 (PDF)",
+            "url": "https://www.iizuka.kyutech.ac.jp/kit/wp-content/uploads/2025/05/4620a8fee1d5e401846ee43ddb3d89f8.pdf",
+            "description": "콘테스트의 결과 상세 내용을 확인하실 수 있습니다."
+          }
+        ]
+      },
+      {
         "date": "2026.02.09",
         "title": "Golfary, 인바운드 일본 골프 여행의 새로운 파트너 '미토우 후쿠오카' 채택",
         "category": "Press",
@@ -52,15 +108,31 @@
         "title": "Golfary 공식 홈페이지 리뉴얼 오픈",
         "category": "Notice"
       },
-      {
-        "date": "2026.01.15",
-        "title": "일본 골프장 데이터 파트너십 확대 체결",
-        "category": "Press"
-      },
+
       {
         "date": "2026.01.05",
         "title": "AI 일정 모델 2.0 버전 배포 완료",
         "category": "Tech"
+      },
+      {
+        "id": "nes-vc-news-152",
+        "date": "2025.10.06",
+        "title": "대학생 창업 지원 프로그램 '비즈니스 챌린지 NEXT' 우승",
+        "category": "Press",
+        "image": "/images/優勝写真NEXT.jpg",
+        "content": "Golfary 팀(대표: Jichul Kim)은 NES 주식회사(NES Venture Capital)가 운영에 참여하는 '비즈니스 챌린지 NEXT'에서 영예의 최우수상(우승)을 수상했습니다.\n\n본 프로그램은 차세대 혁신을 이끌어갈 기업가를 발굴하고 육성하는 것을 목적으로 합니다. Golfary가 제안한 '자유롭고 간편한 골프 여행 제공'이라는 비즈니스 모델은 그 시장성과 실현 가능성, 그리고 무엇보다 높은 장래성을 인정받아 전문 투자자인 NES-VC 심사위원들의 압도적인 지지를 받으며 1위로 선정되었습니다.\n\nNES-VC는 사회적 과제 해결과 새로운 생태계 구축을 목표로 하는 벤처 캐피털입니다. 이번 수상은 단순한 비즈니스의 성장성을 넘어, Golfary가 내건 '골프 투어리즘을 통한 지역 창생'이라는 비전이 사회에 긍정적인 영향을 미칠 지속 가능한 모델로서 전문 투자자들에게 깊이 인정받았음을 의미합니다.\n\n앞으로 NES-VC의 실질적인 지원과 멘토링을 최대한 활용하여, 사업의 급성장(Growth)과 사회적 구현을 가속화해 나갈 것입니다.",
+        "links": [
+          {
+            "title": "NES-VC 뉴스 릴리스",
+            "url": "https://nes-vc.com/news/152",
+            "description": "NES 주식회사의 비즈니스 챌린지 NEXT 개최 보고입니다."
+          },
+          {
+            "title": "후쿠오카시 기자 발표 자료 (PDF)",
+            "url": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2025/documents/bizchallenext2025.pdf",
+            "description": "후쿠오카시의 비즈니스 챌린지 NEXT 수상 결과 공식 발표 자료입니다."
+          }
+        ]
       }
     ]
   },

@@ -18,11 +18,19 @@ export interface TeamMember {
 }
 
 export interface NewsItem {
+  id?: string;
   date: string;
   title: string;
   category: string;
   image?: string;
   url?: string;
+  content?: string;
+  links?: { 
+    title: string; 
+    url: string;
+    image?: string;
+    description?: string;
+  }[];
 }
 
 export interface Dictionary {
