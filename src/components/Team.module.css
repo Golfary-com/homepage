@@ -20,8 +20,18 @@
   text-align: center;
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-m);
-  color: var(--text-primary);
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Gradient Text */
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .subtitle {
@@ -33,38 +43,15 @@
   line-height: 1.6;
 }
 
-/* Team Members Horizontal Scroll */
+/* Team Members Grid (Centered) */
 .grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--spacing-xl);
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding: var(--spacing-l) 0 var(--spacing-2xl);
-  margin: 0 calc(-1 * var(--spacing-m));
-  padding-left: var(--spacing-m);
-  padding-right: var(--spacing-m);
-}
-
-/* Hide scrollbar but keep functionality */
-.grid::-webkit-scrollbar {
-  height: 8px;
-}
-
-.grid::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.grid::-webkit-scrollbar-thumb {
-  background: var(--primary-green);
-  border-radius: 4px;
-}
-
-.grid::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-dark);
+  padding: var(--spacing-l) var(--spacing-m) var(--spacing-2xl);
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .card {
@@ -218,12 +205,10 @@
   }
   
   .grid {
-    margin: 0;
-    /* Center the active item by adding side padding equal to (screen/2 - card/2) */
-    /* Since card is 300px, half is 150px */
-    padding: 0 calc(50% - 150px);
-    gap: 20px;
-    padding-bottom: 20px; /* Space for shadow */
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: var(--spacing-l);
   }
 }
 
