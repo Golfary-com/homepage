@@ -101,6 +101,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Language Context Optimization */
+:lang(ko) body {
+  font-family: var(--font-inter), var(--font-noto-sans-kr), var(--font-noto-sans-jp), -apple-system, sans-serif;
+}
+
+:lang(ja) body {
+  font-family: var(--font-inter), var(--font-noto-sans-jp), var(--font-noto-sans-kr), -apple-system, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: var(--font-weight-bold);

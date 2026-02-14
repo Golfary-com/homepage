@@ -39,8 +39,8 @@ export default async function RootLayout({
   const dict = await getDictionary(params.lang);
 
   return (
-    <html lang={params.lang}>
-      <body className={`${inter.variable} ${notoSansJP.variable} ${notoSansKR.variable}`}>
+    <html lang={params.lang} className={`${inter.variable} ${notoSansJP.variable} ${notoSansKR.variable}`}>
+      <body>
         <Header dict={dict} lang={params.lang} />
         {children}
         <Footer dict={dict} lang={params.lang} />
