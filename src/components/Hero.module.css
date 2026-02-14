@@ -16,6 +16,7 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+  background-color: #000; /* Prevent white flashes */
 }
 
 .slide {
@@ -27,7 +28,8 @@
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 2.5s ease-in-out, transform 2.5s ease-out;
+  /* Slow down transform reset (10s) so it doesn't look like it's shrinking fast while fading out */
+  transition: opacity 2.5s ease-in-out, transform 10s linear; 
   transform: scale(1);
 }
 
