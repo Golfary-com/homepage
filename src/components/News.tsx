@@ -1,18 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
 import styles from "./News.module.css";
 import { Dictionary } from "../types";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-export default function News({ dict }: { dict: Dictionary }) {
+export default function News({ dict, lang }: { dict: Dictionary; lang: string }) {
   const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
-  const [isExpanded, setIsExpanded] = useState(false);
   const initialItemsToShow = 3;
-  const items = dict.news.items;
-  const visibleItems = isExpanded ? items : items.slice(0, initialItemsToShow);
-  const hasMoreItems = items.length > initialItemsToShow;
+  const sortedItems = [...dict.news.items].sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
+  const pressItems = sortedItems.filter(item => item.category === 'Press');
+  const otherItems = sortedItems.filter(item => item.category !== 'Press');
+  
+  const items = [...pressItems, ...otherItems];
+  const visibleItems = items.slice(0, initialItemsToShow);
+
 
   return (
     <section 
@@ -44,6 +50,19 @@ export default function News({ dict }: { dict: Dictionary }) {
               </>
             );
 
+            if (item.id) {
+              return (
+                <Link
+                  key={index}
+                  href={`/${lang}/news/${item.id}`}
+                  className={`${styles.item} ${styles.link} ${isVisible ? styles.itemVisible : ''}`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <Content />
+                </Link>
+              );
+            }
+
             return item.url ? (
               <a 
                 key={index} 
@@ -67,16 +86,14 @@ export default function News({ dict }: { dict: Dictionary }) {
           })}
         </div>
         
-        {hasMoreItems && (
-          <div className={styles.buttonWrapper}>
-            <button 
-              className={styles.showMoreButton}
-              onClick={() => setIsExpanded(!isExpanded)}
-            >
-              {isExpanded ? dict.news.showLess : dict.news.showMore}
-            </button>
-          </div>
-        )}
+        <div className={styles.buttonWrapper}>
+          <Link 
+            href={`/${lang}/news`}
+            className={styles.showMoreButton}
+          >
+            {dict.news.showMore}
+          </Link>
+        </div>
       </div>
     </section>
   );

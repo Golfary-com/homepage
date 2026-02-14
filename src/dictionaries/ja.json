@@ -41,6 +41,62 @@
     "showLess": "閉じる",
     "items": [
       {
+        "id": "kitakyushu-ai-contest-2025",
+        "date": "2025.08.27",
+        "title": "地域創生・社会課題解決AIプログラミングコンテスト2025 優勝",
+        "category": "Press",
+        "image": "/images/優勝記念AWS.jpg",
+        "content": "Golfaryチーム（代表：Jichul Kim）は、2025年8月27日に開催された「地域創生・社会課題解決AIプログラミングコンテスト2025」において、北九州エリアでの優勝を果たしました。\n\n本コンテストは、AI技術を活用して地域の課題を解決し、地方創生を推進することを目的としたものです。Golfaryは、ゴルフツーリズムを通じた地域経済の活性化と、AIを活用したパーソナライズされた旅行体験の提供を提案し、その革新性と実現可能性が高く評価されました。\n\n特に、北九州エリアの観光資源とゴルフ場を連携させ、インバウンド観光客を誘致する具体的なプランが審査員から絶賛されました。今回の受賞を機に、Golfaryは北九州市および周辺地域との連携をさらに深め、実証実験を通じてサービスの社会実装を加速させてまいります。\n\n今後もGolfaryは、テクノロジーの力で地方の魅力を世界に発信し、持続可能な観光モデルの構築に貢献してまいります。",
+        "links": [
+          {
+            "title": "地域創生・社会課題解決AIプログラミングコンテスト2025 最終審査会",
+            "url": "https://youtu.be/RymL_CVFe-A?si=BFg93IrI137W2zFl",
+            "image": "https://img.youtube.com/vi/RymL_CVFe-A/maxresdefault.jpg",
+            "description": "YouTubeにて公開中の最終審査会での発表の様子をご覧いただけます。"
+          },
+          {
+            "title": "AWS デジタル社会実現ツアー 2025",
+            "url": "https://aws.amazon.com/jp/government-education/worldwide/japan/nationwide-2025/",
+            "description": "コンテストの募集要項および詳細情報が掲載されています。"
+          }
+        ]
+      },
+      {
+        "id": "kyoto-global-venture-2025",
+        "date": "2025.12.14",
+        "title": "KYOTO 大学生グローバルベンチャーコンテスト 3rd Prize 受賞",
+        "category": "Press",
+        "image": "/images/Kyoto3rdPrize.jpg",
+        "content": "Golfaryチームは、2025年12月12日から14日にかけて開催された「KYOTO 大学生グローバルベンチャーコンテスト」において、3rd Prize（第3位）を受賞しました。\n\n本コンテストは国際的な規模で開催され、多様な文化的背景を持つ学生起業家たちが集まりました。技術的な側面だけでなく、他のチームの発表を通じて経営的な視点やビジネスモデルの構築についても多くの学びを得ることができました。\n\n特に、地元の自治体関係者の方々と直接対話する機会を得て、Golfaryが提案するインバウンド観光施策による観光客流入の可能性について再確認できたことは、今後の事業展開において非常に貴重な経験となりました。",
+        "links": [
+          {
+            "title": "IE University 公式サイト",
+            "url": "https://www.ie.education/",
+            "description": "主催大学であるIE Universityのウェブサイトです。"
+          }
+        ]
+      },
+      {
+        "id": "fukuoka-biz-contest-2025",
+        "date": "2025.10.25",
+        "title": "FUKUOKA 学生ビジコン 2025 優秀賞",
+        "category": "Press",
+        "image": "/images/優勝記念写真飯塚.jpg",
+        "content": "Golfaryチーム（代表：Jichul Kim）は、2025年10月25日に開催された「FUKUOKA 学生ビジコン 2025」において、優秀賞を受賞しました。\n\n本コンテストにおいて、Golfaryは「インバウンド向けゴルフツーリズムDXプラットフォーム」を提案しました。アジア最大級のゴルフ市場を持つ日本への旅行における課題（言語の壁、予約の複雑さ、移動手段の確保など）を、AI技術を活用して解決するワンストップソリューションです。\n\n特に、構想段階にとどまらず、すでに実際に使用可能なプロダクト（MVP）を開発・保有している点が、実効性の高さとして審査員から絶賛されました。また、急増するインバウンド需要を取り込み地域経済に還元する「地方創生」への貢献度も高く評価されています。\n\n今後は、実証実験を通じたサービスのブラッシュアップを進め、持続可能な観光モデルの構築と社会実装を加速させてまいります。",
+        "links": [
+          {
+            "title": "コンテスト詳細",
+            "url": "http://iizukafriendship.net/info/fgb2025/",
+            "description": "FUKUOKA 学生ビジコン 2025の公式情報です。"
+          },
+          {
+            "title": "結果発表資料 (PDF)",
+            "url": "https://www.iizuka.kyutech.ac.jp/kit/wp-content/uploads/2025/05/4620a8fee1d5e401846ee43ddb3d89f8.pdf",
+            "description": "コンテストの結果詳細をご覧いただけます。"
+          }
+        ]
+      },
+      {
         "date": "2026.02.09",
         "title": "Golfary インバウンド日本ゴルフ旅行の新しいパートナー「未踏福岡」に採択",
         "category": "Press",
@@ -52,15 +108,31 @@
         "title": "Golfary 公式ホームページをリニューアルオープン",
         "category": "Notice"
       },
-      {
-        "date": "2026.01.15",
-        "title": "日本国内ゴルフ場とのデータパートナーシップを拡大",
-        "category": "Press"
-      },
+
       {
         "date": "2026.01.05",
         "title": "AI日程モデル 2.0 バージョンの提供を開始",
         "category": "Tech"
+      },
+      {
+        "id": "nes-vc-news-152",
+        "date": "2025.10.06",
+        "title": "大学生向け起業支援プログラム「ビジネスチャレンジNEXT」優勝",
+        "category": "Press",
+        "image": "/images/優勝写真NEXT.jpg",
+        "content": "Golfaryチーム（代表：Jichul Kim）は、NES株式会社（NES Venture Capital）が運営に参画する「ビジネスチャレンジNEXT」において、栄えある最優秀賞（優勝）を受賞しました。\n\n本プログラムは、次世代のイノベーションを担う起業家を発掘・育成することを目的としています。Golfaryが提案した「自由で手軽なゴルフ旅行の提供」というビジネスモデルは、その市場性と実現可能性、そして何より将来性が高く評価され、プロの投資家であるNES-VCの審査員から圧倒的な支持を得て1位に選出されました。\n\nNES-VCは、社会課題の解決と新しいエコシステムの構築を目指すベンチャーキャピタルです。今回の受賞は、単なるビジネスの成長性だけでなく、Golfaryが掲げる「ゴルフツーリズムを通じた地方創生」というビジョンが、社会にインパクトを与える持続可能なモデルとして、投資家からも高く評価されたことを意味します。\n\n今後は、NES-VCからのハンズオン支援やメンタリングを最大限に活用し、事業の急成長（グロース）と社会実装を加速させてまいります。",
+        "links": [
+          {
+            "title": "NES-VC ニュースリリース",
+            "url": "https://nes-vc.com/news/152",
+            "description": "NES株式会社によるビジネスチャレンジNEXTの開催報告です。"
+          },
+          {
+            "title": "福岡市 記者発表資料 (PDF)",
+            "url": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2025/documents/bizchallenext2025.pdf",
+            "description": "福岡市によるビジネスチャレンジNEXT受賞結果の公式発表資料です。"
+          }
+        ]
       }
     ]
   },

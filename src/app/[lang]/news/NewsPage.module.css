@@ -1,18 +1,11 @@
-.news {
-  padding: 120px 0;
-  background: var(--bg-secondary);
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.news.visible {
-  opacity: 1;
-  transform: translateY(0);
+.container {
+  padding: 160px 0 160px;
+  min-height: 80vh;
+  background: var(--bg-primary);
 }
 
 .title {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-5xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-3xl);
   text-align: center;
@@ -26,26 +19,30 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-l);
+  padding: 0 var(--spacing-m);
 }
 
 .item {
   display: flex;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: 1px solid rgba(0, 0, 0, 0.05);
   align-items: center;
   gap: var(--spacing-xl);
-  opacity: 0;
-  transform: translateX(-30px);
   position: relative;
   overflow: hidden;
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-.item.itemVisible {
-  opacity: 1;
-  transform: translateX(0);
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .link {
@@ -58,6 +55,7 @@
   transform: translateY(-4px);
   border-color: var(--primary-color);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  background: var(--bg-primary);
 }
 
 .imageWrapper {
@@ -123,64 +121,34 @@
   color: #7B1FA2;
 }
 
-.itemTitle {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-primary);
-  line-height: 1.4;
-  margin: 0;
-  transition: color 0.3s ease;
-}
-
-.item:hover .itemTitle {
-  color: var(--primary-dark);
-}
-
-@media (max-width: 768px) {
-  .list {
-    padding: 0 var(--spacing-m);
-  }
-
-  .item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: var(--spacing-l);
-  }
-
-  .imageWrapper {
-    width: 100%;
-    height: 200px;
-    margin-bottom: var(--spacing-m);
-  }
-
-  .itemTitle {
-    font-size: var(--font-size-xl);
-  }
-}
-
-.buttonWrapper {
+.filterContainer {
   display: flex;
   justify-content: center;
-  margin-top: var(--spacing-3xl);
+  gap: 12px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
-.showMoreButton {
-  background: white;
-  border: 1px solid var(--border-color);
-  padding: 12px 32px;
-  border-radius: 50px;
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-bold);
+.filterButton {
+  padding: 10px 28px;
+  border-radius: 100px;
+  border: 1px solid var(--border-color); /* Need to ensure this var exists or use generic */
+  background: transparent;
   color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
 }
 
-.showMoreButton:hover {
-  background: var(--primary-green);
+.filterButton:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.filterButton.active {
+  background: var(--text-primary);
   color: white;
-  border-color: var(--primary-green);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+  border-color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
