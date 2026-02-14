@@ -6,8 +6,7 @@ import { Dictionary } from "../types";
 
 const HERO_IMAGES = [
   '/images/hero-ai.png',
-  '/images/hero-nature.png',
-  '/images/hero-dynamic.png'
+  '/images/hero-nature.png'
 ];
 
 export default function Hero({ dict }: { dict: Dictionary }) {
