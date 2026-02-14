@@ -5,8 +5,9 @@ import styles from "./Hero.module.css";
 import { Dictionary } from "../types";
 
 const HERO_IMAGES = [
-  '/images/hero-ai.png',
-  '/images/hero-nature.png'
+  '/images/golf_hero_real.jpg',
+  '/images/hero-nature.png',
+  '/images/hero-dynamic.png'
 ];
 
 export default function Hero({ dict }: { dict: Dictionary }) {
