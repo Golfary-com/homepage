@@ -51,7 +51,7 @@ export default async function NewsArticlePage({
         {item.links && item.links.length > 0 && (
           <div className={styles.links}>
             <h3 className={styles.linksTitle}>
-              {lang === 'ja' ? '関連リンク' : '관련 링크'}
+              {dict.common.relatedLinks}
             </h3>
             <ul className={styles.linksList}>
               {item.links.map((link, index) => (
@@ -83,7 +83,7 @@ export default async function NewsArticlePage({
         )}
 
         <Link href={`/${lang}/news`} className={styles.backButton}>
-          ← {lang === 'ja' ? 'ニュース一覧に戻る' : '뉴스 목록으로 돌아가기'}
+          ← {dict.common.backToNews}
         </Link>
       </article>
     </main>

@@ -1,5 +1,5 @@
 .news {
-  padding: 120px 0;
+  padding: var(--spacing-3xl) 0;
   background: var(--bg-secondary);
   opacity: 0;
   transform: translateY(30px);
@@ -20,13 +20,6 @@
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  
-  /* Gradient Text */
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 .list {
@@ -144,6 +137,19 @@
   font-family: var(--font-family-primary);
 }
 
+.description {
+  color: var(--text-secondary);
+  font-size: 0.95rem; /* Slightly larger than planned for readability */
+  line-height: 1.6;
+  margin-top: var(--spacing-s);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .item:hover .itemTitle {
   color: var(--primary-dark);
 }
@@ -167,6 +173,10 @@
 
   .itemTitle {
     font-size: var(--font-size-xl);
+  }
+
+  .news {
+    padding: var(--spacing-2xl) 0;
   }
 }
 

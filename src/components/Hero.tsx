@@ -34,7 +34,6 @@ export default function Hero({ dict }: { dict: Dictionary }) {
         ))}
       </div>
 
-      <div className={styles.overlay}></div>
       <div className={`container ${styles.grid}`}>
         {/* Left Column: Text & CTA */}
         <div className={styles.content}>
@@ -46,9 +45,6 @@ export default function Hero({ dict }: { dict: Dictionary }) {
             ))}
           </h1>
           <p className={styles.subtitle}>{dict.hero.subSlogan}</p>
-          <div className={styles.actions}>
-            {/* Contact button removed, Service button moved to bottom */}
-          </div>
         </div>
 
         {/* Right Column: Mission & Vision Cards */}
@@ -63,7 +59,6 @@ export default function Hero({ dict }: { dict: Dictionary }) {
           </div>
         </div>
       </div>
-      {/* Scroll Indicator */}
 
     </section>
   );

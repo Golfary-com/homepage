@@ -37,6 +37,9 @@ export interface Dictionary {
   common: {
     title: string;
     description: string;
+    backToHome: string;
+    backToNews: string;
+    relatedLinks: string;
   };
   nav: {
     home: string;
@@ -79,6 +82,17 @@ export interface Dictionary {
       establishment: string;
       capital: string;
       representative: string;
+      aboutUs: string;
+      globalBusiness: string;
+      overview: string;
+      labels: {
+        name: string;
+        address: string;
+        establishment: string;
+        capital: string;
+        representative: string;
+        business: string;
+      };
       business: string[];
     };
   };

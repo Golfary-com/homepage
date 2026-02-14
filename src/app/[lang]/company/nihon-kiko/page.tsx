@@ -24,7 +24,7 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
               </div>
               <div className={styles.headerText}>
                 <h1 className={styles.title}>{info.name}</h1>
-                <p className={styles.subtitle}>Global Business & Tourism Solution</p>
+                <p className={styles.subtitle}>{info.globalBusiness}</p>
               </div>
            </div>
         </div>
@@ -35,38 +35,38 @@ export default async function NihonKikoPage({ params: { lang } }: { params: { la
           <div className={styles.grid}>
             {/* Introduction Card */}
             <div className={styles.introCard}>
-              <h3 className={styles.sectionTitle}>About Us</h3>
+              <h3 className={styles.sectionTitle}>{info.aboutUs}</h3>
               <p className={styles.introText}>{info.introduction}</p>
             </div>
 
             {/* Company Details Table */}
             <div className={styles.detailsCard}>
-              <h3 className={styles.sectionTitle}>{lang === 'ko' ? '회사 개요' : '会社概要'}</h3>
+              <h3 className={styles.sectionTitle}>{info.overview}</h3>
               <div className={styles.tableWrapper}>
                 <table className={styles.table}>
                   <tbody>
                     <tr>
-                      <th>{lang === 'ko' ? '회사명' : '商号'}</th>
+                      <th>{info.labels.name}</th>
                       <td>{info.name}</td>
                     </tr>
                     <tr>
-                      <th>{lang === 'ko' ? '주소' : '本店'}</th>
+                      <th>{info.labels.address}</th>
                       <td>{info.address}</td>
                     </tr>
                     <tr>
-                      <th>{lang === 'ko' ? '설립일' : '会社成立の年月日'}</th>
+                      <th>{info.labels.establishment}</th>
                       <td>{info.establishment}</td>
                     </tr>
                     <tr>
-                      <th>{lang === 'ko' ? '자본금' : '資本金の額'}</th>
+                      <th>{info.labels.capital}</th>
                       <td>{info.capital}</td>
                     </tr>
                     <tr>
-                      <th>{lang === 'ko' ? '대표자' : '代表取締役'}</th>
+                      <th>{info.labels.representative}</th>
                       <td>{info.representative}</td>
                     </tr>
                     <tr>
-                      <th>{lang === 'ko' ? '사업목적' : '目的'}</th>
+                      <th>{info.labels.business}</th>
                       <td>
                         <ul className={styles.businessList}>
                           {info.business.map((item, index) => (

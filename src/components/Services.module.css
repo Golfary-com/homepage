@@ -20,13 +20,6 @@
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  
-  /* Gradient Text */
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 .grid {

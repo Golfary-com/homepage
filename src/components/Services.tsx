@@ -36,7 +36,7 @@ export default function Services({ dict }: { dict: Dictionary }) {
       id="services"
     >
       <div className="container">
-        <h2 className={styles.title}>{dict.services.title}</h2>
+        <h2 className={`${styles.title} gradient-text`}>{dict.services.title}</h2>
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div 

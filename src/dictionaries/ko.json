@@ -1,7 +1,10 @@
 {
   "common": {
     "title": "Golfary",
-    "description": "일본 골프여행의 새로운 기준"
+    "description": "일본 골프여행의 새로운 기준",
+    "backToHome": "메인으로 돌아가기",
+    "backToNews": "뉴스 목록으로 돌아가기",
+    "relatedLinks": "관련 링크"
   },
   "nav": {
     "home": "홈",
@@ -149,6 +152,17 @@
       "establishment": "2017년 6월 1일",
       "capital": "500만엔",
       "representative": "김영호",
+      "aboutUs": "회사 소개",
+      "globalBusiness": "Global Business & Tourism Solution",
+      "overview": "회사 개요",
+      "labels": {
+        "name": "회사명",
+        "address": "주소",
+        "establishment": "설립일",
+        "capital": "자본금",
+        "representative": "대표자",
+        "business": "사업 목적"
+      },
       "business": [
         "외국인 관광객 수용 수배 및 안내 업무",
         "국제 교류 사업, 자매 도시 교류 사업의 기획 및 운영",
