@@ -109,9 +109,13 @@ export interface Dictionary {
   contact: {
     title: string;
     subtitle: string;
+    description: string;
     name: string;
     email: string;
     message: string;
     submit: string;
+    sending: string;
+    success: string;
+    error: string;
   };
 }

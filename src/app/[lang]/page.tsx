@@ -16,7 +16,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
       <Services dict={dict} />
       <News dict={dict} lang={lang} />
       <Team dict={dict} />
-      <ContactForm dict={dict} />
+      <ContactForm dict={dict} lang={lang} />
     </main>
   );
 }
