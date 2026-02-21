@@ -39,7 +39,7 @@
     }
   },
   "news": {
-    "title": "최신 소식",
+    "title": "뉴스",
     "showMore": "더보기",
     "showLess": "접기",
     "items": [
@@ -47,7 +47,7 @@
         "id": "kitakyushu-ai-contest-2025",
         "date": "2025.08.27",
         "title": "지역 창생·사회 과제 해결 AI 프로그래밍 콘테스트 2025 우승",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝記念AWS.jpg",
         "content": "Golfary 팀(대표: Jichul Kim)은 2025년 8월 27일에 개최된 '지역 창생·사회 과제 해결 AI 프로그래밍 콘테스트 2025'에서 기타큐슈 지역 우승을 차지했습니다.\n\n본 콘테스트는 AI 기술을 활용하여 지역 과제를 해결하고 지방 창생을 추진하는 것을 목적으로 합니다. Golfary는 골프 투어리즘을 통한 지역 경제 활성화와 AI를 활용한 맞춤형 여행 경험 제공을 제안하여 그 혁신성과 실현 가능성을 높게 평가받았습니다.\n\n특히 기타큐슈 지역의 관광 자원과 골프장을 연계하여 인바운드 관광객을 유치하는 구체적인 계획이 심사위원들로부터 극찬을 받았습니다. 이번 수상을 계기로 Golfary는 기타큐슈시 및 주변 지역과의 연계를 더욱 강화하고, 실증 실험을 통해 서비스의 사회적 구현을 가속화해 나갈 것입니다.\n\n앞으로도 Golfary는 기술의 힘으로 지방의 매력을 세계에 알리고 지속 가능한 관광 모델 구축에 기여해 나갈 것입니다.",
         "links": [
@@ -65,10 +65,40 @@
         ]
       },
       {
+        "id": "toryumon-fukuoka-2025-burst",
+        "date": "2025.11.08",
+        "title": "F Ventures 주최 'TORYUMON FUKUOKA 2025 BURST' 등단",
+        "category": "Event",
+        "image": "/images/Toryumon.jpg",
+        "content": "Golfary(대표: Jichul Kim)는 2025년 11월 8일, F Ventures가 주최하는 'TORYUMON FUKUOKA 2025 BURST'의 무대에 등단했습니다.\n\nTORYUMON FUKUOKA는 '미래는 기업인에게 배워라'는 이념 아래, 제1선에서 활약 중인 기업가들이 실제 비즈니스 경험과 전략을 직접 공유하는 특별한 이벤트입니다. 이번 행사에는 다양한 업종의 현업 창업가와 투자자들이 참가하여, 실전 비즈니스 인사이트를 나누는 뜨거운 자리가 마련되었습니다.\n\nGolfary는 이번 등단을 통해 'AI × 골프 투어리즘'이라는 혁신적인 비즈니스 모델을 발표했습니다. 언어 장벽, 복잡한 예약 절차, 이동 수단 문제 등 외국인 골퍼들이 일본 여행 시 겪는 다양한 불편함을 AI 기반 원스톱 플랫폼으로 해결한다는 Golfary의 비전은 참가자들로부터 높은 공감과 관심을 이끌어냈습니다.\n\n또한 현업에서 활약 중인 선배 기업가들과의 직접적인 의견 교환을 통해 사업 전략 수립에 있어 매우 실질적인 인사이트를 얻을 수 있었습니다. 다양한 분야에서 성공을 거둔 기업인들의 생생한 조언은 Golfary의 성장 전략을 다듬는 데 큰 자산이 되었습니다.\n\nGolfary는 앞으로도 이러한 기회를 통해 네트워크를 넓히고, AI 기술과 관광 산업의 융합으로 인바운드 골프 여행의 새 지평을 열어 나갈 것입니다.",
+        "links": [
+          {
+            "title": "TORYUMON FUKUOKA 2025 BURST 공식 정보",
+            "url": "https://growth-next.com/events/toryumonfukuoka2025burst",
+            "description": "F Ventures 주최 TORYUMON FUKUOKA 2025 BURST 이벤트 상세 정보를 확인하실 수 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "rocket-pitch-night-fukuoka-2025",
+        "date": "2025.12.11",
+        "title": "Venture Cafe 후쿠오카 'Rocket Pitch Night Fukuoka 2025' 등단",
+        "category": "Event",
+        "image": "/images/ROKET_PITCH.jpg",
+        "content": "Golfary 팀(대표: Jichul Kim)은 2025년 12월 11일, Venture Cafe 후쿠오카가 주최하는 'Rocket Pitch Night Fukuoka 2025'의 무대에 등단했습니다.\n\nRocket Pitch Night는 후쿠오카의 스타트업 생태계를 대표하는 피치 이벤트로, 혁신적인 비즈니스 아이디어를 가진 창업가들이 투자자 및 업계 관계자들 앞에서 자신의 서비스를 발표하는 자리입니다. Golfary는 '최첨단 AI 기술로 구현하는 인바운드 골프 투어리즘 플랫폼'을 주제로 발표를 진행했습니다.\n\n발표에서는 언어 장벽, 복잡한 예약 프로세스, 이동 수단 확보 등 외국인 골퍼들이 일본 여행 시 직면하는 과제들을 AI 기반 원스톱 솔루션으로 해결하는 Golfary의 비전과 실제 MVP를 시연했습니다. 청중으로부터 서비스의 실현 가능성과 시장성에 대해 높은 평가와 공감을 얻었습니다.\n\nVenture Cafe 후쿠오카는 글로벌 혁신 커뮤니티 Venture Cafe의 후쿠오카 거점으로, 매주 스타트업과 이노베이터들이 모여 교류하는 플랫폼입니다. Golfary는 이번 등단을 통해 더욱 많은 파트너 및 투자자들과의 접점을 넓혀, 서비스의 사회적 구현을 한 발 더 앞당겨 나갈 것입니다.",
+        "links": [
+          {
+            "title": "Venture Cafe 후쿠오카 공식 사이트",
+            "url": "https://venturecafefukuoka.org/sessions/rocket-pitch-night-fukuoka-2025/",
+            "description": "Rocket Pitch Night Fukuoka 2025 공식 세션 정보를 확인하실 수 있습니다."
+          }
+        ]
+      },
+      {
         "id": "kyoto-global-venture-2025",
         "date": "2025.12.14",
         "title": "KYOTO 대학생 글로벌 벤처 콘테스트 3rd Prize 수상",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/Kyoto3rdPrize.jpg",
         "content": "Golfary 팀은 2025년 12월 12일부터 14일까지 개최된 'KYOTO 대학생 글로벌 벤처 콘테스트'에서 3rd Prize(3위)를 수상했습니다.\n\n이번 콘테스트는 국제적인 규모로 개최되어 다양한 문화적 배경을 가진 학생 창업가들이 모였습니다. 기술적인 부분뿐만 아니라, 다른 팀들의 발표를 통해 경영적인 관점과 비즈니스 모델 구축에 대해서도 많은 배움을 얻을 수 있었습니다.\n\n특히, 현지 지자체 관계자 분들과 직접 소통하며 Golfary가 제안하는 인바운드 관광 시책을 통한 관광객 유입의 가능성을 재확인할 수 있었던 것은 향후 사업 전개에 있어 매우 귀중한 시간이 되었습니다。",
         "links": [
@@ -83,7 +113,7 @@
         "id": "fukuoka-biz-contest-2025",
         "date": "2025.10.25",
         "title": "FUKUOKA 학생 비즈니스 콘테스트 2025 우수상",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝記念写真飯塚.jpg",
         "content": "Golfary 팀(대표: Jichul Kim)은 2025년 10월 25일에 개최된 'FUKUOKA 학생 비즈니스 콘테스트 2025'에서 우수상을 수상했습니다.\n\n이번 콘테스트에서 Golfary는 '인바운드 타겟 골프 투어리즘 DX 플랫폼'을 제안했습니다. 아시아 최대 규모의 골프 시장을 보유한 일본 여행 시 발생하는 페인 포인트(언어 장벽, 복잡한 예약 절차, 이동 수단 확보 등)를 AI 기술을 활용하여 해결하는 원스톱 솔루션입니다.\n\n특히, 단순한 구상 단계에 그치지 않고 실제로 사용 가능한 프로덕트(MVP)를 이미 개발하여 보유하고 있다는 점이 높은 실현 가능성으로서 심사위원들의 극찬을 받았습니다. 또한, 급증하는 인바운드 수요를 지역 경제 활성화로 연결하는 '지역 창생'에 대한 기여도 역시 높게 평가받았습니다.\n\n앞으로 실증 실험을 통해 서비스를 고도화하고, 지속 가능한 관광 모델 구축 및 사회적 구현을 가속화해 나갈 것입니다.",
         "links": [
@@ -100,29 +130,75 @@
         ]
       },
       {
-        "date": "2026.02.09",
-        "title": "Golfary, 인바운드 일본 골프 여행의 새로운 파트너 '미토우 후쿠오카' 채택",
-        "category": "Press",
-        "image": "/images/news-mitou.jpg",
-        "url": "https://note.com/mitou_fukuoka/n/n424c9df90c79"
+        "id": "tagawa-goldrush-2026",
+        "date": "2026.02.10",
+        "title": "타가와시 주최 'Tagawa Goldrush' 비즈니스 콘테스트 전국 49팀 중 Top 5 채택",
+        "category": "Adoption",
+        "image": "/images/GoldRush.png",
+        "content": "Golfary(대표: Jichul Kim)는 2026년 2월 10일, 타가와시(田川市)가 주최하는 비즈니스 콘테스트 'Tagawa Goldrush'에서 전국 49팀 중 상위 5팀에 선정되어 파이널리스트 자격을 획득했습니다.\n\nTagawa Goldrush는 후쿠오카현 타가와시가 주최하는 첫 시도이자 역사적인 비즈니스 콘테스트로, 전국에서 모인 49팀의 응모 중 상위 5팀에 선정되어 2026년 2월 28일 예정된 최종 파이널 발표 자격을 획득했습니다.\n\nGolfary는 AI 기반 인바운드 골프 투어리즘 원스톱 플랫폼으로 타가와 지역의 관광 자원 활용과 인바운드 관광객 유치를 통한 지역 경제 활성화라는 구체적인 비전을 제시하여 높은 평가를 받았습니다.\n\n2월 28일 최종 파이널에서는 심사위원들 앞에서 Golfary의 비전과 MVP 시연을 선보일 예정입니다. Golfary는 이번 콘테스트를 발판으로 타가와시 및 주변 지역과의 파트너십을 더욱 적극적으로 추진하며, AI 기술과 관광 산업의 융합으로 지역 창생에 기여해 나갈 것입니다.",
+        "links": [
+          {
+            "title": "Tagawa Goldrush 공식 사이트",
+            "url": "https://business-contest-tagawa.studio.site/",
+            "description": "Tagawa Goldrush 비즈니스 콘테스트 공식 페이지입니다."
+          },
+          {
+            "title": "Yahoo 뉴스 관련 기사",
+            "url": "https://news.yahoo.co.jp/articles/3f1c715b28cced346b0f4340a833b3a2087b98a9",
+            "description": "Tagawa Goldrush 관련 Yahoo 뉴스 보도입니다."
+          }
+        ]
       },
       {
-        "date": "2026.02.03",
-        "title": "Golfary 공식 홈페이지 리뉴얼 오픈",
-        "category": "Notice"
+        "id": "karatsu-startup-pitch-2026",
+        "date": "2026.01.28",
+        "title": "KARATSU STARTUP PITCH CONTEST 2026 파이널리스트 채택",
+        "category": "Adoption",
+        "image": "/images/Karatsu.png",
+        "content": "Golfary(대표: Jichul Kim)는 2026년 1월 28일, 최고 수준의 스타트업을 발굴하기 위한 'KARATSU STARTUP PITCH CONTEST 2026'에서 전국 수많은 지원자 중 상위 12팀의 파이널리스트로 채택되었습니다.\n\n본 콘테스트는 사가현 카라츠시가 주최하며, 지역 과제 해결 및 새로운 가치 창출을 목표로 하는 혁신적인 비즈니스 모델을 겨루는 무대입니다. Golfary는 인바운드 골프 투어리즘의 맹점을 AI로 해결하고 일본 전역의 관광 산업을 혁신하겠다는 비전을 제시하여 높은 평가를 받았습니다.\n\n특히 다양한 심사 위원들의 엄격한 심사 과정을 거쳐 최종 12팀에 선정된 것은 Golfary의 사업 실현 가능성과 시장 성장성을 공식적으로 인정받은 결과입니다.\n\n이번 성과를 바탕으로 Golfary는 2026년 3월 24일 카라츠시에서 열리는 최종 피치 이벤트에 등단하여 청중과 심사위원들 앞에서 Golfary의 비전과 서비스를 발표할 예정입니다. 앞으로도 지속적인 혁신을 통해 인바운드 관광과 지역 창생에 기여하는 선도적인 플랫폼으로 성장해 나가겠습니다.",
+        "links": [
+          {
+            "title": "KARATSU STARTUP PITCH CONTEST 2026 공식 사이트",
+            "url": "https://karatsu-dx.jp/pitch2026/",
+            "description": "KARATSU STARTUP PITCH CONTEST 2026의 공식 안내 및 상세 정보입니다."
+          }
+        ]
+      },
+      {
+        "id": "qrec-tech-bootcamp-2026",
+        "date": "2026.02.05",
+        "title": "규슈대학교 QREC 테크 부트캠프 (액셀러레이션 프로그램) 채택",
+        "category": "Adoption",
+        "image": "/images/TechBootCamp.png",
+        "content": "Golfary(대표: Jichul Kim)는 2026년 2월 5일, 규슈대학교 QREC(규슈대학교 기업가 정신 연구교육센터)가 운영하는 '테크 부트캠프(Tech Bootcamp) — 액셀러레이션 프로그램'에 채택되었습니다.\n\n테크 부트캠프는 규슈대학교에서 탄생하는 혁신을 가속화하는 것을 목적으로, 대학원생 및 포스트닥터 연구자들의 기술 아이디어를 활용한 프로젝트의 사회 구현을 빠른 속도로 지원하는 프로그램입니다. 다수의 응모 중 상위 5팀에 선정되어 참가 자격을 획득했습니다.\n\nGolfary는 AI 기술을 활용해 인바운드 골프 투어리즘의 페인 포인트(언어 장벽, 복잡한 예약 절차, 이동 수단 등)를 해결하는 원스톱 플랫폼으로서의 기술 가능성과 사회적 구현 계획을 높이 평가받아 채택되었습니다.\n\n이번 프로그램을 통해 Golfary는 규슈대학교 전문 멘토진의 집중 지원을 받으며 기술 고도화, 비즈니스 모델 강화 및 실증 실험을 가속화할 예정입니다. 학술 기관과의 긴밀한 협력을 통해 서비스의 사회적 가치를 한 층 높여 나갈 것입니다.",
+        "links": [
+          {
+            "title": "QREC 테크 부트캠프 공식 페이지",
+            "url": "https://qrec.kyushu-u.ac.jp/trial/acceleration/",
+            "description": "규슈대학교 QREC 액셀러레이션 프로그램의 상세 정보를 확인하실 수 있습니다."
+          }
+        ]
+      },
+      {
+        "date": "2025.08.13",
+        "title": "Golfary, 인바운드 일본 골프 여행의 새로운 파트너 '미토우 후쿠오카' 채택",
+        "category": "Adoption",
+        "image": "/images/news-mitou.jpg",
+        "content": "Golfary가 '미토우 후쿠오카(未踏福岡)'에 채택되었습니다. 미토우 후쿠오카는 창업가와 혜신가를 지원하는 후쿠오카시의 인퀴베이션 프로그램입니다. Golfary는 AI를 활용한 인바운드 골프 투어리즘의 혁신적 구조가 높이 평가받아 파트너로 선정되었습니다.",
+        "url": "https://note.com/mitou_fukuoka/n/n424c9df90c79"
       },
 
       {
         "date": "2026.01.05",
         "title": "AI 일정 모델 2.0 버전 배포 완료",
-        "category": "Tech",
+        "category": "Notice",
         "image": "/images/CoverPage.png"
       },
       {
         "id": "nes-vc-news-152",
         "date": "2025.10.06",
         "title": "대학생 창업 지원 프로그램 '비즈니스 챌린지 NEXT' 우승",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝写真NEXT.jpg",
         "content": "Golfary 팀(대표: Jichul Kim)은 NES 주식회사(NES Venture Capital)가 운영에 참여하는 '비즈니스 챌린지 NEXT'에서 영예의 최우수상(우승)을 수상했습니다.\n\n본 프로그램은 차세대 혁신을 이끌어갈 기업가를 발굴하고 육성하는 것을 목적으로 합니다. Golfary가 제안한 '자유롭고 간편한 골프 여행 제공'이라는 비즈니스 모델은 그 시장성과 실현 가능성, 그리고 무엇보다 높은 장래성을 인정받아 전문 투자자인 NES-VC 심사위원들의 압도적인 지지를 받으며 1위로 선정되었습니다.\n\nNES-VC는 사회적 과제 해결과 새로운 생태계 구축을 목표로 하는 벤처 캐피털입니다. 이번 수상은 단순한 비즈니스의 성장성을 넘어, Golfary가 내건 '골프 투어리즘을 통한 지역 창생'이라는 비전이 사회에 긍정적인 영향을 미칠 지속 가능한 모델로서 전문 투자자들에게 깊이 인정받았음을 의미합니다.\n\n앞으로 NES-VC의 실질적인 지원과 멘토링을 최대한 활용하여, 사업의 급성장(Growth)과 사회적 구현을 가속화해 나갈 것입니다.",
         "links": [
@@ -179,7 +255,7 @@
   },
   "team": {
     "title": "우리 팀",
-    "subtitle": "최첨단 AI 기술과 글로벌 시각으로 개인화된 골프 여행 경험을 제공하는",
+    "subtitle": "AI로 만드는 프리미엄 골프 여행",
     "viewDetails": "자세히 보기",
     "bioTitle": "소개",
     "educationTitle": "이력",
@@ -217,8 +293,8 @@
   },
   "contact": {
     "title": "제휴 문의",
-    "description": "질문이나 상담은 아래 양식을 통해 문의해 주세요.\n담당자가 확인 후 신속히 답변 드리겠습니다。",
-    "subtitle": "궁금하신 점이 있으시면 언제든 문의해주세요",
+    "description": "문의는 아래 양식으로 보내주세요.",
+    "subtitle": "파트너십·상담 문의",
     "name": "이름",
     "email": "이메일",
     "message": "메시지",
