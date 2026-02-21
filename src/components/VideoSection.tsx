@@ -5,22 +5,26 @@ export default function VideoSection({ dict }: { dict: Dictionary }) {
   return (
     <section className={styles.videoSection}>
       <div className="container">
+        {/* Section Header — label + title (left) / CTA button (right) */}
         <div className={styles.header}>
-          <h2 className={`${styles.title} gradient-text`}>{dict.video.title}</h2>
-          <p className={styles.subtitle}>{dict.video.subtitle}</p>
-        </div>
-        
-        <div className={styles.ctaWrapper}>
-          <a 
-            href="https://golfary.streamlit.app/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className={styles.ctaServices}
-          >
-            {dict.video.cta}
-          </a>
+          <div className={styles.headerLeft}>
+            <span className={styles.label}>Demo</span>
+            <h2 className={styles.title}>{dict.video.title}</h2>
+            <p className={styles.subtitle}>{dict.video.subtitle}</p>
+          </div>
+          <div className={styles.headerRight}>
+            <a 
+              href="https://golfary.streamlit.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.ctaButton}
+            >
+              {dict.video.cta}
+            </a>
+          </div>
         </div>
 
+        {/* Video */}
         <div className={styles.videoWrapper}>
           <iframe
             width="100%"

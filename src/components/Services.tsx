@@ -36,15 +36,21 @@ export default function Services({ dict }: { dict: Dictionary }) {
       id="services"
     >
       <div className="container">
-        <h2 className={`${styles.title} gradient-text`}>{dict.services.title}</h2>
+        {/* Section Header */}
+        <div className={styles.sectionHeader}>
+          <span className={styles.label}>Services</span>
+          <h2 className={styles.title}>{dict.services.title}</h2>
+        </div>
+
+        {/* Cards Grid */}
         <div className={styles.grid}>
           {services.map((service, index) => (
             <div 
               key={index}
               className={`${styles.card} ${isVisible ? styles.cardVisible : ''}`}
-              style={{ animationDelay: `${index * 0.15}s` }}
-              tabIndex={0} // Enable focus on mobile/keyboard
-              role="button" // Semantics
+              style={{ transitionDelay: `${index * 0.12}s` }}
+              tabIndex={0}
+              role="button"
             >
               <div className={styles.imageWrapper}>
                 <Image

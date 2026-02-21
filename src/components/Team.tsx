@@ -25,7 +25,10 @@ export default function Team({ dict }: { dict: Dictionary }) {
       id="team"
     >
       <div className="container">
-        <h2 className={`${styles.title} gradient-text`}>{dict.team.title}</h2>
+        <div className={styles.sectionHeader}>
+          <span className={styles.label}>Team</span>
+          <h2 className={styles.title}>{dict.team.title}</h2>
+        </div>
         <p className={styles.subtitle}>{dict.team.subtitle}</p>
         
         {/* Team Members */}
