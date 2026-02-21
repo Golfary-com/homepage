@@ -39,7 +39,7 @@
     }
   },
   "news": {
-    "title": "最新ニュース",
+    "title": "ニュース",
     "showMore": "もっと見る",
     "showLess": "閉じる",
     "items": [
@@ -47,7 +47,7 @@
         "id": "kitakyushu-ai-contest-2025",
         "date": "2025.08.27",
         "title": "地域創生・社会課題解決AIプログラミングコンテスト2025 優勝",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝記念AWS.jpg",
         "content": "Golfaryチーム（代表：Jichul Kim）は、2025年8月27日に開催された「地域創生・社会課題解決AIプログラミングコンテスト2025」において、北九州エリアでの優勝を果たしました。\n\n本コンテストは、AI技術を活用して地域の課題を解決し、地方創生を推進することを目的としたものです。Golfaryは、ゴルフツーリズムを通じた地域経済の活性化と、AIを活用したパーソナライズされた旅行体験の提供を提案し、その革新性と実現可能性が高く評価されました。\n\n特に、北九州エリアの観光資源とゴルフ場を連携させ、インバウンド観光客を誘致する具体的なプランが審査員から絶賛されました。今回の受賞を機に、Golfaryは北九州市および周辺地域との連携をさらに深め、実証実験を通じてサービスの社会実装を加速させてまいります。\n\n今後もGolfaryは、テクノロジーの力で地方の魅力を世界に発信し、持続可能な観光モデルの構築に貢献してまいります。",
         "links": [
@@ -65,10 +65,40 @@
         ]
       },
       {
+        "id": "toryumon-fukuoka-2025-burst",
+        "date": "2025.11.08",
+        "title": "F Ventures主催 'TORYUMON FUKUOKA 2025 BURST' に登壇",
+        "category": "Event",
+        "image": "/images/Toryumon.jpg",
+        "content": "Golfary（代表：Jichul Kim）は、2025年11月8日、F Venturesが主催する「TORYUMON FUKUOKA 2025 BURST」の舞台に登壇しました。\n\nTORYUMON FUKUOKAは、「未来は起業家に学べ」という理念のもと、第一線で活踽する起業家たちが実際のビジネス経験や戦略を直接共有する特別なイベントです。今回のイベントには、さまざまな業種の現場起業家や投資家が参加し、実践的なビジネスインサイトを共有する熱い場になりました。\n\nGolfaryは、今回の登壇を通じて「AI×ゴルフツーリズム」という革新的なビジネスモデルを発表しました。言語の壁、複雑な予約プロセス、交通手段の確保など、外国人ゴルファーが日本旅行時に直面するさまざまな不便をAIbaseのワンストッププラットフォームで解決するというGolfaryのビジョンは、参加者から高い共感と関心を引き出しました。\n\nまた、現場で活踽する先輩起業家たちとの直接的な意見交換を通じて、事業戦略の策定において非常に実践的なインサイトを得ることができました。妄々な分野で成功をおさめた起業家たちの生の声は、Golfaryの成長戦略を磨く上で大きな資産となりました。\n\nGolfaryは今後もこうした機会を通じてネットワークを広げ、AI技術と観光産業の融合によりインバウンドゴルフ旅行の新たな地平を開いてまいります。",
+        "links": [
+          {
+            "title": "TORYUMON FUKUOKA 2025 BURST 公式情報",
+            "url": "https://growth-next.com/events/toryumonfukuoka2025burst",
+            "description": "F Ventures主催TORYUMON FUKUOKA 2025 BURSTのイベント詳細をご確認いただけます。"
+          }
+        ]
+      },
+      {
+        "id": "rocket-pitch-night-fukuoka-2025",
+        "date": "2025.12.11",
+        "title": "Venture Cafe福岡 'Rocket Pitch Night Fukuoka 2025' に登壇",
+        "category": "Event",
+        "image": "/images/ROKET_PITCH.jpg",
+        "content": "Golfaryチーム（代表：Jichul Kim）は、2025年12月11日にVenture Cafe福岡が主催する「Rocket Pitch Night Fukuoka 2025」の舞台に登壇しました。\n\nRocket Pitch Nightは、福岡のスタートアップエコシステムを代表するピッチイベントであり、革新的なビジネスアイデアを持つ起業家が投資家や業界関係者の前でサービスを発表する場です。Golfaryは「最先端AI技術で実現するインバウンドゴルフツーリズムプラットフォーム」をテーマに発表を行いました。\n\n発表では、言語の壁、複雑な予約プロセス、移動手段の確保など、外国人ゴルファーが日本旅行時に直面する課題を、AIベースのワンストップソリューションで解決するGolfaryのビジョンと実際のMVP（最小機能製品）をデモンストレーションしました。聴衆からはサービスの実現可能性と市場性について高い評価と共感を得ることができました。\n\nVenture Cafe福岡は、グローバルイノベーションコミュニティVenture Cageの福岡拠点として、毎週スタートアップやイノベーターが集まり交流するプラットフォームです。Golfaryは今回の登壇を通じて、より多くのパートナーや投資家との接点を広げ、サービスの社会実装をさらに加速させてまいります。",
+        "links": [
+          {
+            "title": "Venture Cafe福岡 公式サイト",
+            "url": "https://venturecafefukuoka.org/sessions/rocket-pitch-night-fukuoka-2025/",
+            "description": "Rocket Pitch Night Fukuoka 2025の公式セッション情報をご確認いただけます。"
+          }
+        ]
+      },
+      {
         "id": "kyoto-global-venture-2025",
         "date": "2025.12.14",
         "title": "KYOTO 大学生グローバルベンチャーコンテスト 3rd Prize 受賞",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/Kyoto3rdPrize.jpg",
         "content": "Golfaryチームは、2025年12月12日から14日にかけて開催された「KYOTO 大学生グローバルベンチャーコンテスト」において、3rd Prize（第3位）を受賞しました。\n\n本コンテストは国際的な規模で開催され、多様な文化的背景を持つ学生起業家たちが集まりました。技術的な側面だけでなく、他のチームの発表を通じて経営的な視点やビジネスモデルの構築についても多くの学びを得ることができました。\n\n特に、地元の自治体関係者の方々と直接対話する機会を得て、Golfaryが提案するインバウンド観光施策による観光客流入の可能性について再確認できたことは、今後の事業展開において非常に貴重な経験となりました。",
         "links": [
@@ -83,7 +113,7 @@
         "id": "fukuoka-biz-contest-2025",
         "date": "2025.10.25",
         "title": "FUKUOKA 学生ビジコン 2025 優秀賞",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝記念写真飯塚.jpg",
         "content": "Golfaryチーム（代表：Jichul Kim）は、2025年10月25日に開催された「FUKUOKA 学生ビジコン 2025」において、優秀賞を受賞しました。\n\n本コンテストにおいて、Golfaryは「インバウンド向けゴルフツーリズムDXプラットフォーム」を提案しました。アジア最大級のゴルフ市場を持つ日本への旅行における課題（言語の壁、予約の複雑さ、移動手段の確保など）を、AI技術を活用して解決するワンストップソリューションです。\n\n特に、構想段階にとどまらず、すでに実際に使用可能なプロダクト（MVP）を開発・保有している点が、実効性の高さとして審査員から絶賛されました。また、急増するインバウンド需要を取り込み地域経済に還元する「地方創生」への貢献度も高く評価されています。\n\n今後は、実証実験を通じたサービスのブラッシュアップを進め、持続可能な観光モデルの構築と社会実装を加速させてまいります。",
         "links": [
@@ -100,29 +130,75 @@
         ]
       },
       {
-        "date": "2026.02.09",
-        "title": "Golfary インバウンド日本ゴルフ旅行の新しいパートナー「未踏福岡」に採択",
-        "category": "Press",
-        "image": "/images/news-mitou.jpg",
-        "url": "https://note.com/mitou_fukuoka/n/n424c9df90c79"
+        "id": "tagawa-goldrush-2026",
+        "date": "2026.02.10",
+        "title": "田川市主催 'Tagawa Goldrush' ビジネスコンテスト 全国49チーム中 Top 5 に選抜",
+        "category": "Adoption",
+        "image": "/images/GoldRush.png",
+        "content": "Golfary（代表：Jichul Kim）は、2026年2月10日、田川市が主催するビジネスコンテスト「Tagawa Goldrush」において、全国49チームの中に上位5チームに選抜され、ファイナリスト資格を獲得しました。\n\nTagawa Goldrushは、福岡県田川市が主催する初の試みとなる歴史的なビジネスコンテストです。全国各地から集まった49チームの応募の中から上位5チームに選抜され、2026年2月28日に予定される最終ファイナルでの発表資格を獲得しました。\n\nGolfaryは、AI基盤のインバウンドゴルフツーリズムワンストッププラットフォームとして、田川地區の観光資源活用とインバウンド観光客誘致による地域経済活性化という具体的なビジョンを提示し、高い評価を受けました。\n\n2月28日の最終ファイナルでは、審査委員の前でGolfaryのビジョンとMVPデモを発表する予定です。Golfaryは、今回のコンテストを足がかりに田川市および周辺地域とのパートナーシップをさらに積極的に展開し、AI技術と観光産業の融合により地方創生に貢献してまいります。",
+        "links": [
+          {
+            "title": "Tagawa Goldrush 公式サイト",
+            "url": "https://business-contest-tagawa.studio.site/",
+            "description": "Tagawa Goldrush ビジネスコンテスト公式ページです。"
+          },
+          {
+            "title": "Yahooニュース関連記事",
+            "url": "https://news.yahoo.co.jp/articles/3f1c715b28cced346b0f4340a833b3a2087b98a9",
+            "description": "Tagawa Goldrushに関するYahooニュースの報道です。"
+          }
+        ]
       },
       {
-        "date": "2026.02.03",
-        "title": "Golfary 公式ホームページをリニューアルオープン",
-        "category": "Notice"
+        "id": "karatsu-startup-pitch-2026",
+        "date": "2026.01.28",
+        "title": "KARATSU STARTUP PITCH CONTEST 2026 ファイナリスト採択",
+        "category": "Adoption",
+        "image": "/images/Karatsu.png",
+        "content": "Golfary（代表：Jichul Kim）は、2026年1月28日、トップレベルのスタートアップを発掘するための「KARATSU STARTUP PITCH CONTEST 2026」において、全国からの多数の応募の中から上位12チームのファイナリストとして採択されました。\n\n本コンテストは佐賀県唐津市が主催し、地域課題の解決および新たな価値創出を目指す革新的なビジネスモデルを競う舞台です。Golfaryは、インバウンドゴルフツーリズムの課題をAIで解決し、日本全国の観光産業を革新するというビジョンを提示し、高い評価を受けました。\n\n特に、多様な審査員による厳格な審査過程を経て最終12チームに選出されたことは、Golfaryの事業実現可能性と市場成長性が公式に認められた結果です。\n\n今回の成果を基に、Golfaryは2026年3月24日に唐津市で開催される最終ピッチイベントに登壇し、聴衆と審査員の前でGolfaryのビジョンとサービスを発表する予定です。今後も持続的なイノベーションを通じて、インバウンド観光と地方創生に貢献するリーディングプラットフォームとして成長してまいります。",
+        "links": [
+          {
+            "title": "KARATSU STARTUP PITCH CONTEST 2026 公式サイト",
+            "url": "https://karatsu-dx.jp/pitch2026/",
+            "description": "KARATSU STARTUP PITCH CONTEST 2026の公式案内および詳細情報です。"
+          }
+        ]
+      },
+      {
+        "id": "qrec-tech-bootcamp-2026",
+        "date": "2026.02.05",
+        "title": "九州大学QREC テックブートキャンプ（アクセラレーションプログラム）に採択",
+        "category": "Adoption",
+        "image": "/images/TechBootCamp.png",
+        "content": "Golfary（代表：Jichul Kim）は、2026年2月5日、九州大学QREC（九州大学起業家精神研究教育センター）が運営する「テックブートキャンプ（Tech Bootcamp）— アクセラレーションプログラム」に採択されました。\n\nテックブートキャンプは、九州大学発イノベーションの促進を目的とし、大学院生とポスドク研究者の技術アイデアを使ったプロジェクトの社会実装を高速で（＝アクセラレートして）支援するプログラムです。多数の応募の中から上位5チームに選抓され、参加車格を獲得しました。\n\nGolfaryは、AI技術を活用してインバウンドゴルフツーリズムのペインポイント（言語の壁、複雑な予約手続き、交通手段の確保など）を解決するワンストッププラットフォームとしての技術的可能性と社会実装計画が高く評価され、採択されました。\n\nこのプログラムを通じてGolfaryは、九州大学の専門メンター陣の集中支援を受けながら、技術の高度化、ビジネスモデルの強化および実証実験を加速させていく予定です。学術機関との緊密な連携によりサービスの社会的価値をさらに高めてまいります。",
+        "links": [
+          {
+            "title": "QREC テックブートキャンプ公式ページ",
+            "url": "https://qrec.kyushu-u.ac.jp/trial/acceleration/",
+            "description": "九州大学QRECアクセラレーションプログラムの詳細情報をご確認いただけます。"
+          }
+        ]
+      },
+      {
+        "date": "2025.08.13",
+        "title": "Golfary インバウンド日本ゴルフ旅行の新しいパートナー「未踏福岡」に採択",
+        "category": "Adoption",
+        "image": "/images/news-mitou.jpg",
+        "content": "Golfaryが「未踏福岡」に採択されました。未踏福岡は、起業家やイノベーターを支援する福岡市のインキュベーションプログラムです。Golfaryは、AIによるインバウンドゴルフツーリズムの革新的なビジネス構造が高く評価され、パートナーとして選中されました。",
+        "url": "https://note.com/mitou_fukuoka/n/n424c9df90c79"
       },
 
       {
         "date": "2026.01.05",
         "title": "AI日程モデル 2.0 バージョンの提供を開始",
-        "category": "Tech",
+        "category": "Notice",
         "image": "/images/CoverPage.png"
       },
       {
         "id": "nes-vc-news-152",
         "date": "2025.10.06",
         "title": "大学生向け起業支援プログラム「ビジネスチャレンジNEXT」優勝",
-        "category": "Press",
+        "category": "Award",
         "image": "/images/優勝写真NEXT.jpg",
         "content": "Golfaryチーム（代表：Jichul Kim）は、NES株式会社（NES Venture Capital）が運営に参画する「ビジネスチャレンジNEXT」において、栄えある最優秀賞（優勝）を受賞しました。\n\n本プログラムは、次世代のイノベーションを担う起業家を発掘・育成することを目的としています。Golfaryが提案した「自由で手軽なゴルフ旅行の提供」というビジネスモデルは、その市場性と実現可能性、そして何より将来性が高く評価され、プロの投資家であるNES-VCの審査員から圧倒的な支持を得て1位に選出されました。\n\nNES-VCは、社会課題の解決と新しいエコシステムの構築を目指すベンチャーキャピタルです。今回の受賞は、単なるビジネスの成長性だけでなく、Golfaryが掲げる「ゴルフツーリズムを通じた地方創生」というビジョンが、社会にインパクトを与える持続可能なモデルとして、投資家からも高く評価されたことを意味します。\n\n今後は、NES-VCからのハンズオン支援やメンタリングを最大限に活用し、事業の急成長（グロース）と社会実装を加速させてまいります。",
         "links": [
@@ -179,7 +255,7 @@
   },
   "team": {
     "title": "私たちのチーム",
-    "subtitle": "最先端AI技術とグローバルな視点で、パーソナライズされたゴルフ旅行体験を提供する",
+    "subtitle": "AIが実現するプレミアムゴルフ旅行",
     "viewDetails": "詳しく見る",
     "bioTitle": "紹介",
     "educationTitle": "履歴",
@@ -217,8 +293,8 @@
   },
   "contact": {
     "title": "お問い合わせ",
-    "description": "ご質問やご相談は、下記フォームよりお気軽にお問い合わせください。\n担当者より折り返しご連絡いたします。",
-    "subtitle": "お気軽にお問い合わせください",
+    "description": "以下のフォームよりお気軽にどうぞ。",
+    "subtitle": "お問合わせ・パートナーシップ",
     "name": "お名前",
     "email": "メールアドレス",
     "message": "メッセージ",
