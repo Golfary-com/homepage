@@ -9,12 +9,11 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
   const [sectionRef, isVisible] = useIntersectionObserver<HTMLElement>();
 
   const initialItemsToShow = 3;
-  // Filter for Press items only and sort by date descending
-  const pressItems = dict.news.items
-    .filter(item => item.category === 'Press')
+  // Sort by date descending
+  const sortedItems = [...dict.news.items]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   
-  const visibleItems = pressItems.slice(0, initialItemsToShow);
+  const visibleItems = sortedItems.slice(0, initialItemsToShow);
 
   return (
     <section 
@@ -23,7 +22,21 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
       id="news"
     >
       <div className="container">
-        <h2 className={`${styles.title} gradient-text`}>{dict.news.title}</h2>
+        {/* Section Header */}
+        <div className={styles.header}>
+          <div className={styles.titleGroup}>
+            <span className={styles.label}>News</span>
+            <h2 className={styles.title}>{dict.news.title}</h2>
+          </div>
+          <Link 
+            href={`/${lang}/news`}
+            className={styles.showMoreButton}
+          >
+            {dict.news.showMore}
+          </Link>
+        </div>
+
+        {/* News List */}
         <div className={styles.list}>
           {visibleItems.map((item, index) => {
             const Content = () => (
@@ -57,7 +70,7 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
                   key={index}
                   href={`/${lang}/news/${item.id}`}
                   className={`${styles.item} ${styles.link} ${isVisible ? styles.itemVisible : ''}`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   <Content />
                 </Link>
@@ -71,7 +84,7 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`${styles.item} ${styles.link} ${isVisible ? styles.itemVisible : ''}`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <Content />
               </a>
@@ -79,21 +92,12 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
               <div 
                 key={index} 
                 className={`${styles.item} ${isVisible ? styles.itemVisible : ''}`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <Content />
               </div>
             );
           })}
-        </div>
-        
-        <div className={styles.buttonWrapper}>
-          <Link 
-            href={`/${lang}/news`}
-            className={styles.showMoreButton}
-          >
-            {dict.news.showMore}
-          </Link>
         </div>
       </div>
     </section>

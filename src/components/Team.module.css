@@ -1,6 +1,6 @@
 .team {
   padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--bg-secondary);
   position: relative;
   overflow: hidden;
   opacity: 0;
@@ -13,35 +13,47 @@
   transform: translateY(0);
 }
 
-.team::before {
+/* Section Header */
+.sectionHeader {
+  margin-bottom: var(--spacing-l);
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.label::before {
   content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(76, 175, 80, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
+  width: 20px;
+  height: 2px;
+  background: var(--primary-green);
+  display: inline-block;
 }
 
 .title {
-  text-align: center;
-  font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-l);
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0;
+  font-family: var(--font-family-primary);
 }
 
 .subtitle {
-  text-align: center;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--text-secondary);
-  max-width: 700px;
-  margin: 0 auto var(--spacing-xl);
-  line-height: 1.6;
+  max-width: 600px;
+  margin: 12px 0 var(--spacing-xl);
+  line-height: 1.7;
 }
 
 /* Team Members Grid (Centered) */

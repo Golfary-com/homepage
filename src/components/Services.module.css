@@ -1,6 +1,10 @@
+/* ==============================
+   SERVICES SECTION
+   ============================== */
+
 .services {
   padding: var(--spacing-3xl) 0;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -11,106 +15,143 @@
   transform: translateY(0);
 }
 
-.title {
-  text-align: center;
-  font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
+/* Section Header */
+.sectionHeader {
   margin-bottom: var(--spacing-2xl);
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.label::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: var(--primary-green);
+  display: inline-block;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0;
+  font-family: var(--font-family-primary);
+}
+
+/* Grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--spacing-xl);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
+/* Card */
 .card {
-  background: var(--bg-card);
-  padding: 0;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-sm);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow var(--transition-base), border-color var(--transition-base);
-  border: 2px solid transparent;
-  position: relative;
+  background: var(--bg-primary);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
   overflow: hidden;
+  transition: opacity 0.6s ease-out, transform 0.5s ease-out, box-shadow 0.3s ease;
   opacity: 0;
-  transform: translateY(40px) scale(0.95);
+  transform: translateY(32px);
+  position: relative;
+  cursor: pointer;
 }
 
 .card.cardVisible {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
+.card:hover,
+.card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Top accent line */
 .card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: var(--gradient-primary);
   transform: scaleX(0);
-  transition: transform var(--transition-base);
+  transition: transform 0.3s ease;
   z-index: 2;
 }
 
+.card:hover::before,
+.card:focus::before {
+  transform: scaleX(1);
+}
+
+/* Image */
 .imageWrapper {
   width: 100%;
-  height: 240px;
-  position: relative;
-  background: var(--bg-secondary);
+  height: 220px;
   overflow: hidden;
+  background: var(--bg-tertiary);
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-base);
-}
-
-.card h3 {
-  padding: var(--spacing-l) var(--spacing-xl) var(--spacing-m);
-  margin: 0;
-  font-size: var(--font-size-xl);
-  color: var(--text-primary);
-}
-
-.card p {
-  padding: 0 var(--spacing-xl) var(--spacing-xl);
-  margin: 0;
-  color: var(--text-secondary);
-  line-height: var(--line-height-relaxed);
-}
-
-.card:hover,
-.card:active,
-.card:focus {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--primary-light);
-  outline: none; /* Remove default browser outline */
+  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .card:hover .image,
-.card:active .image,
 .card:focus .image {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
-.card:hover::before,
-.card:active::before,
-.card:focus::before {
-  transform: scaleX(1);
+/* Card Text */
+.card h3 {
+  padding: 20px 24px 10px;
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  font-family: var(--font-family-primary);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.card p {
+  padding: 0 24px 24px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-family: var(--font-family-primary);
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
   .services {
     padding: var(--spacing-2xl) 0;
   }
