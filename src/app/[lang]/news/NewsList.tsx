@@ -46,7 +46,7 @@ export default function NewsList({ items, lang }: { items: NewsItem[]; lang: str
   };
 
   const sortedItems = [...items].sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
+    return new Date(b.date.replace(/\./g, '/')).getTime() - new Date(a.date.replace(/\./g, '/')).getTime();
   });
 
   const filteredItems = sortedItems
