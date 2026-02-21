@@ -11,7 +11,7 @@ export default function News({ dict, lang }: { dict: Dictionary; lang: string })
   const initialItemsToShow = 3;
   // Sort by date descending
   const sortedItems = [...dict.news.items]
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    .sort((a, b) => new Date(b.date.replace(/\./g, '/')).getTime() - new Date(a.date.replace(/\./g, '/')).getTime());
   
   const visibleItems = sortedItems.slice(0, initialItemsToShow);
 
