@@ -13,35 +13,59 @@ export async function POST(req: Request) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
 
-    // 1. Email to Admin (Golfary)
-    const adminMailOptions = {
-      from: process.env.EMAIL_USER,
-      to: 'golfary.jp@gmail.com',
-      subject: `New Inquiry from ${name} (${email})`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Language: ${lang}
-        Message:
-        ${message}
-      `,
-      html: `
-        <h3>New Inquiry from Golfary Homepage</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Language:</strong> ${lang}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-      `,
-    };
+    // 1. Send message to Slack
+    if (slackWebhookUrl) {
+      const slackPayload = {
+        text: `📬 *新しいお問い合わせが届きました*`,
+        blocks: [
+          {
+            type: 'header',
+            text: {
+              type: 'plain_text',
+              text: '📬 新しいお問い合わせ',
+              emoji: true,
+            },
+          },
+          {
+            type: 'section',
+            fields: [
+              {
+                type: 'mrkdwn',
+                text: `*お名前:*\n${name}`,
+              },
+              {
+                type: 'mrkdwn',
+                text: `*メールアドレス:*\n<mailto:${email}|${email}>`,
+              },
+            ],
+          },
+          {
+            type: 'section',
+            text: {
+              type: 'mrkdwn',
+              text: `*お問い合わせ内容:*\n${message}`,
+            },
+          },
+          {
+            type: 'divider',
+          },
+        ],
+      };
+
+      const slackResponse = await fetch(slackWebhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(slackPayload),
+      });
+
+      if (!slackResponse.ok) {
+        console.error('Failed to send Slack message:', await slackResponse.text());
+      }
+    } else {
+      console.warn('SLACK_WEBHOOK_URL is not set.');
+    }
 
     // 2. Auto-reply Email to User
     const autoReplyContext = {
@@ -57,6 +81,14 @@ export async function POST(req: Request) {
 
     const replyContent = autoReplyContext[lang as keyof typeof autoReplyContext] || autoReplyContext.ja;
 
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
     const userMailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
@@ -64,17 +96,13 @@ export async function POST(req: Request) {
       text: replyContent.text,
     };
 
-    // Send both emails
-    await Promise.all([
-      transporter.sendMail(adminMailOptions),
-      transporter.sendMail(userMailOptions)
-    ]);
+    await transporter.sendMail(userMailOptions);
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error processing contact form:', error);
     return NextResponse.json(
-      { error: 'Failed to send email.' },
+      { error: 'Failed to process your request.' },
       { status: 500 }
     );
   }
