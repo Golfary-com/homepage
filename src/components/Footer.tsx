@@ -8,7 +8,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: string 
       <div className={`container ${styles.inner}`}>
         <div className={styles.info}>
           <div className={styles.brand}>Golfary</div>
-          <p className={styles.copyright}>© 2026 Golfary Inc. All rights reserved.</p>
+          <p className={styles.copyright}>© 2026 Golfary. Operated by 株式会社日本紀行.</p>
         </div>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
